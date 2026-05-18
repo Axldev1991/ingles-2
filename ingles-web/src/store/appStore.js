@@ -8,7 +8,6 @@ class AppStore {
     
     // Initial core state
     const defaultStats = {
-      streak: 1,
       masteryScores: {
         unit1: 0,
         unit2: 0,
@@ -99,8 +98,6 @@ class AppStore {
 
     this.state.stats.masteryScores[this.state.activeUnitId] = percentage;
     
-    // Check if the whole unit was completed successfully for the first time
-    // and potentially increase streak
     storageService.save(this.state.stats);
   }
 
@@ -319,10 +316,6 @@ class AppStore {
         if (this.state.isCorrect) {
           if (!this.state.stats.completedExercises.includes(exercise.id)) {
             this.state.stats.completedExercises.push(exercise.id);
-            // Increment streak optionally
-            if (this.state.stats.completedExercises.length % 5 === 0) {
-              this.state.stats.streak += 1;
-            }
           }
         }
 

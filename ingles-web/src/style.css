@@ -671,8 +671,151 @@ header {
   .study-panel {
     grid-template-columns: 1fr;
   }
+  
   .app-container {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .sidebar {
+    gap: 12px;
+  }
+
+  .sidebar-title {
+    display: none;
+  }
+
+  .unit-selector-list {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    gap: 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .unit-selector-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .unit-btn {
+    width: auto;
+    flex-shrink: 0;
+    padding: 10px 14px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .unit-btn .unit-icon {
+    font-size: 1.2rem;
+  }
+
+  .unit-btn .unit-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .unit-btn .unit-info h3 {
+    font-size: 0.85rem;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .unit-btn .unit-info p,
+  .unit-btn .unit-info .progress-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 12px;
+    gap: 16px;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 16px;
+  }
+  
+  .header-analytics {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .logo-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-screen {
+    padding: 24px 16px;
+  }
+  
+  .theory-card, .practice-card, .unit-dashboard-header, .exam-container {
+    padding: 16px;
+  }
+  
+  .welcome-screen h2 {
+    font-size: 1.5rem;
+  }
+  
+  .unit-header-main {
+    gap: 12px;
+  }
+  
+  .unit-large-icon {
+    font-size: 2.2rem;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .unit-header-text h2 {
+    font-size: 1.3rem;
+  }
+  
+  .unit-header-text p {
+    font-size: 0.85rem;
+  }
+  
+  .study-panel {
+    gap: 16px;
+  }
+  
+  .option-btn {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+  
+  .step-indicator {
+    min-width: 70px;
+    font-size: 0.7rem;
+    padding: 6px 2px;
+  }
+  
+  .listening-player {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px;
+  }
+  
+  table, .premium-table, .results-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .topic-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
 }
 
