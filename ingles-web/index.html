@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plataforma interactiva para repasar contenidos, teoría y ejercicios de Inglés 2 en la UTN Facultad Regional Avellaneda." />
+    <title>UTN FRA - Inglés II Interactive Study Hub</title>
+  </head>
+  <body>
+    <!-- Glow Decorative Blurs -->
+    <div class="bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow-2" aria-hidden="true"></div>
+
+    <div class="app-container">
+      <header>
+        <div class="logo-container">
+          <div class="logo-badge" aria-hidden="true">UTN</div>
+          <div class="logo-title">
+            <h1>Inglés II Study Hub</h1>
+            <p>Facultad Regional Avellaneda</p>
+          </div>
+        </div>
+        
+        <div class="header-analytics">
+          <div class="stat-chip" id="streak-chip">
+            🔥 Racha: <span id="streak-value">1</span> día
+          </div>
+          <div class="stat-chip" id="mastery-chip">
+            🎓 Dominio: <span id="mastery-value">0%</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation Sidebar -->
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Unidades de Estudio</h2>
+        <nav aria-label="Navegación de unidades de estudio">
+          <ul class="unit-selector-list" id="unit-list">
+            <!-- Dynamic Sidebar List -->
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Study and Quiz Arena -->
+      <main class="main-content" id="app-view">
+        <!-- Dynamic views will load here -->
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

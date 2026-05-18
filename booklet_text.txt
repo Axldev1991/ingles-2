@@ -1,0 +1,2292 @@
+                                                                                        Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                    Booklet Inglés II
+Unit N°1 - Programming design and computer languages
+
+SPEAKING. Group work. In groups of four discuss what you think programming is and write a
+definition.
+
+VOCABULARY. Steps in programming. Match the words (1-5) to their definitions (a-e)
+
+   1.   flowchart
+   2.   source code
+   3.   compiler
+   4.   machine code
+   5.   debugging
+
+   a. Program instructions written in a particular computer language.
+   b. The techniques of detecting and correcting errors (or bugs) which may occur in programs.
+   c. A diagram representing the successive logical steps in a program.
+   d. A special program which converts the source program into machine code - the only language
+      understood by the processor.
+   e. The basic instructions understood by computers; it consists of 1s and 0s (binary code).
+
+LISTENING.
+a) Read and put these steps into the correct order according to your knowledge. Then, listen to
+Andrea Finch, a software developer, talking to a group of students on a training course about how a
+program is written and check your answers. (Infotech - track 29)
+
+___ Write instructions in a programming language.
+___ Prepare documentation.
+___ Understand the problem and plan the solution.
+___ Make a flowchart of the program.
+___ Compile the program.
+___ Test and debug the program.
+
+b) Listen again and make detailed notes. Then share them with the whole class.
+
+READING COMPREHENSION
+a) Read the text. How many high-level languages are mentioned?
+
+
+ Computer languages
+ Unfortunately for us, computers can't understand spoken English or any other natural language. The only
+ language they can understand directly is machine code, which consists of 1s and Os (binary code).
+
+
+
+
+                                                 1
+                                                                                            Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+Machine code is too difficult to write. For this reason, we use symbolic languages to communicate
+instructions to the computer. For example, assembly languages use abbreviations such as ADD, SUB,
+MPY to represent instructions. The program is then translated into machine code by a piece of software
+called an assembler. Machine code and assembly languages are called low-level languages because
+they are closer to the hardware. They are quite complex and restricted to particular machines. To make
+the programs easier to write, and to overcome the problem of intercommunication between different
+types of computer, software developers designed high-level languages, which are closer to the English
+language. Here are some examples:
+FORTRAN was developed by IBM in 1954 and is still used for scientific and engineering applications.
+COBOL (Common Business Oriented Language) was developed in 1959 and is mainly used for business
+applications.
+BASIC was developed in the 1960s and was widely used in microcomputer programming because it was
+easy to learn. Visual BASIC is a modern version of the old BASIC language, used to build graphical
+elements such as buttons and windows in Windows programs.
+PASCAL was created in 1971. It is used in universities to teach the fundamentals of programming.
+C was developed in the 1980s at AT&T. It is used to write system software, graphics and commercial
+applications. C++ is a version of C which incorporates object-oriented programming: the programmer
+concentrates on particular things (a piece of text, a graphic or a table, etc.) and gives each object functions
+which can be altered without changing the entire program. For example, to add a new graphics format,
+the programmer needs to rework just the graphics object. This makes programs easier to modify.
+Java was designed by Sun in 1995 to run on the Web. Java applets provide animation and interactive
+features on web pages.
+Programs written in high-level languages must be translated into machine code by a compiler or an
+interpreter. A compiler translates the source code into object code - that is, it converts the entire
+program into machine code in one go. On the other hand, an interpreter translates the source code line by
+line as the program is running.
+
+
+
+
+It is important not to confuse programming languages with markup languages, used to create web
+documents. Markup languages use instructions, known as markup tags, to format and link text files.
+
+
+
+
+                                                   2
+                                                                                        Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                            Booklet Inglés II
+ Some examples include:
+ HTML, which allows us to describe how information will be displayed on web pages.
+ XML, which stands for EXtensible Markup Language. While HTML uses pre-defined tags, XML enables us
+ to define our own tags: it is not limited by a fixed set of tags.
+ VoiceXML, which makes Web content accessible via voice and phone. VoiceXML is used to create voice
+ applications that run on the phone, whereas HTML is used to create visual applications (for example, web
+ pages).
+
+
+
+
+b) Read the text again and answer these questions.
+
+
+1 Do computers understand human languages? Why?/Why not?
+__________________________________________________________________ __.
+2 What is the function of an assembler?
+__________________________________________________________________ __.
+3 Why did software developers design high-level languages?
+__________________________________________________________________ __.
+4 Which language is used to teach programming techniques?
+__________________________________________________________________ __.
+5 What is the difference between a compiler and an interpreter?
+__________________________________________________________________ __.
+6 Why are HTML and VoiceXML called markup languages?
+__________________________________________________________________ __.
+
+
+c) Complete these sentences with a computer language from the text.
+1 ______________ allows us to create our own tags to describe our data better. We aren't
+
+
+
+
+                                                 3
+                                                                                        Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                            Booklet Inglés II
+constrained by a pre-defined set of tags the way we are with HTML.
+2 IBM developed _____________ in the 1950s. It was the first high-level language in data
+processing.
+3 _____________ applets are small programs that run automatically on web pages and let you
+watch animated characters, play games, etc.
+4 ____________ is the HTML of the voice web. Instead of using a web browser and a keyboard, you
+interact with a voice browser by listening to pre-recorded audio output and sending audio input
+through a telephone.
+5 This language is widely used in the business community. For example, the statement ADD VAT to
+NET-PRICE could be used in a _____________ program.
+
+
+WORD BUILDING. Look at the words in the boxes. Are they nouns, verbs or adjectives? Write n, v
+or adj next to each word. There may be more than one possible answer. Complete the sentences
+with words from the boxes.
+
+
+
+ program____           programmers____              programming____              programmable____
+
+
+
+1 __________________ is the process of writing a program using a computer language.
+2 A computer __________________ is a set of instructions that tells the computer how to do a
+specific task.
+3 Most computer __________________ make a plan of the program before they write it.
+4 A __________________ keyboard allows the user to configure the layout and meaning of the
+keys.
+
+
+
+ compile____                  compiler____          compilation____
+
+
+
+5 Programs written in a high-level language require __________________ - that is, translation into
+machine code, the language understood by the processor.
+6 A source program is converted into machine code by software called a __________________.
+7 Programmers usually __________________ their programs to generate an object program and
+diagnose possible errors.
+
+
+
+ bug____                      debug____                    debugger____         debugging____
+
+
+
+
+                                                4
+                                                                                           Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+
+8 Any error or malfunction of a computer program is known as a __________________.
+9 A __________________ is a program used to test and __________________ other programs.
+10 The process of going through the code to identify the cause of errors and fixing them is called
+__________________.
+
+
+GRAMMAR. the infinitive
+Reflect upon grammar. Look back at the text “Computer languages” and underline all the “to +
+verb” that you can find. Then choose the correct option(s) to complete the sentence.
+   ●    We use “to” + an infinitive verb…
+          a) to express the purpose of something.
+          b) after adjectives.
+          c) as the main verb of a sentence.
+
+
+
+ The infinitive
+ The infinitive with to is used in the following ways:
+    ●    To express purpose
+ We use symbolic languages to communicate instructions to the computer.
+ We use symbolic languages in order to communicate instructions to the computer.
+ We use symbolic languages for to communicate instructions to the computer.
+    ●    After adjectives
+ BASIC was widely used in the past because it was easy to learn.
+ Machine code is too difficult to write (= not easy enough to write)
+    ●    After certain verbs (e.g. afford, demand, plan, agree, expect, promise, appear, hope, refuse,
+         arrange, learn, try, decide, manage)
+ A lot of companies are now trying to develop voice applications for web access.
+    ●    After the object of certain verbs (e.g. advise, encourage, allow, expect, tell, ask, invite, want,
+         enable, order, warn)
+ HTML allows us to describe how information will be displayed on web pages.
+
+
+ The bare infinitive (without to) is used in the following ways:
+    ●    After modal verbs (e.g. can, could, may, might, will, would, must, should)
+ Unfortunately, computers can't understand spoken English.
+
+
+
+
+                                                   5
+                                                                                           Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                   Booklet Inglés II
+ High-level languages must be translated into machine code.
+     ●   After the object with the verbs make and let
+ Programs make computers perform specific tasks.
+
+
+
+LANGUAGE WORK: the infinitive
+After dealing with the theory, make sentences using these prompts.
+1 not easy / write instructions in COBOL
+It's not easy to write instructions in COBOL
+2 expensive / set up a data-processing area
+________________________________________________________
+3 advisable / test the programs under different conditions
+________________________________________________________
+4 unusual / write a program that works correctly the first time it's tested
+________________________________________________________
+5 important / use a good debugger to fix errors
+________________________________________________________
+6 easy / learn Visual BASIC
+________________________________________________________
+
+
+Graphics and design
+SPEAKING. Discuss in pairs. As a programmer, is it important to know about graphic programs? If
+not, who would be in charge of the graphics?
+LISTENING.
+a) Listen to an extract from an online tutorial about graphics programs and answer these questions.
+Remember to focus on key words and write them down to answer the questions. (Infotech. Track
+25)
+1 What is a toolbox in graphics software?
+_______________________________________________________________________.
+2 What are graphics primitives?
+_______________________________________________________________________.
+3 What sort of attributes, or characteristics, can be used in graphical objects?
+_______________________________________________________________________.
+
+
+
+
+                                                   6
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                  Booklet Inglés II
+4 What does translation mean?
+_______________________________________________________________________.
+
+
+b) Listen again and complete this extract from the web version of the tutorial.
+
+
+Graphics programs usually have a toolbox - a collection of drawing and (1) _________ tools that
+enable you to type, (2) __________ draw, paint, edit, move, and view images on the computer.
+The basic shapes which are used to (3) __________ graphical objects are called primitives. These are
+usually geometric, such as lines between two points, arcs, circles, polygons, ellipses and even text.
+Furthermore, you can specify the attributes of each primitive, such as its colour, line type, fill area,
+interior style and so on.
+The various tools in a toolbox usually appear together as pop-up icons in a menu or palette. To use
+one, you activate it by (4) ________ on it. For example, if you want to (5) ________ a rectangle, you
+activate the rectangle tool, and the pop-up options give you the possibility of (6) _________
+rectangles with square or rounded corners.
+You can transform an object by translating, (7) _________ or scaling it. Translation means moving an
+object to a different location. Rotation is (8) ___________ the object around an axis. For example,
+you may need to rotate an object 90 or 180 degrees to fit the drawing. (9) _________ is making the
+object larger or smaller.
+
+
+GRAMMAR. The -ing form
+Reflect upon grammar. Read the text above (ex b) again and underline all the words that contain
+an -ing suffix. Are they used as verbs, adjectives or nouns? Provide examples for your answers.
+
+
+
+ The -ing form
+
+ We use the -ing form in three ways:
+     1) Rendering includes lighting and shading.
+ Rendering is a gerund acting as the subject of the sentence. Lighting and shading are also gerunds, but
+ acting as the object of the sentence.
+     ● A gerund is a word that is formed by a verb + -ing suffix used in a place where we traditionally
+         would find a noun.
+     ● They can be the subject or object of a sentence or they can be found after a preposition.
+                Designers start a project by making a wireframe.
+     ● Some verbs are always followed by gerunds (e.g. avoid, fancy, finish, give up, hate, imagine,
+         involve, keep, look forward to, mind, suggest, enjoy, love, etc)
+     2) They use special applets to create amazing fractals.
+ Amazing is an adjective.
+     3) We are designing a new graphic on this computer.
+
+
+
+
+                                                   7
+                                                                                           Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                 Booklet Inglés II
+ Designing is a present participle. Present participles are used in continuous tenses and reduced relative
+ clauses.
+
+
+LANGUAGE WORK. the -ing form.
+a) After dealing with the theory, decide if the -ing forms in these sentences are gerunds, present
+participles or adjectives. Write g, pp or a.
+
+
+1 PCs generate graphics by performing mathematical calculations on data. ____
+2 Businesspeople use graphics to make information more interesting visually. ____
+3 Graphs and diagrams can be more effective ways of communicating with clients than lists of
+figures. ____
+4 She is designing a logo for the company. ____
+5 If you need to make a presentation, I suggest using PowerPoint. ____
+6 The Internet is a network linking other networks. ____
+
+
+b) Correct the mistakes in these sentences. There are seven mistakes in total.
+
+
+1 Computer animation is the process of create objects which move across the screen.
+2 Texturing involves add paint, colour and filters to drawings and designs.
+3 You can open the colour palette by click on the corresponding icon.
+4 CAD programs are very fast at to perform drawing functions.
+5 A lot of time and money is saved by test a car design before to make the product.
+6 To render refers to the techniques used to make realistic images.
+
+
+c) The infinitive or the -ing form? Choose the correct words (a-c) to complete these sentences.
+
+
+1 We use high-level languages because machine code is too difficult ________, understand and
+debug.
+a read                b reading              c to read
+2 I went on the course ____________ how to be a better programmer.
+a learn               b to learn             c for to learn
+3 I'm not interested in ____________ that computer language.
+a learn               b learning             c to learn
+
+
+
+
+                                                  8
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+4 He refuses ____________ the project with me.
+a do                   b doing                c to do
+5 The engineers warned the employees not ___________ the cables.
+a touch                b touching             c to touch
+6 They may not _____________ to the conference.
+a come                 b coming               c to come
+7 ______________ in the IT industry is usually well paid.
+a work                 b working              c to work
+8 Spyware can make your PC _____________ more slowly.
+a perform              b performing           c to perform
+9 This program is too slow _____________ the simulation.
+a do                   b to do                c for doing
+10 Some people are desperate about ___________ money more than learning how to program.
+a making               b to make              c make
+
+
+SPEAKING. Work in pairs. Student A reads about Python and Student B (at the end of the
+document) reads about Javascript. Do not read your partner’s text. Then ask and answer questions
+to complete the chart.
+
+
+
+
+ Student A
+
+ Python was created by Guido van Rossum and first released in 1991. The name Python is inspired by the
+ British comedy group Monty Python. Python is known for its clear syntax and readability, often described
+ as "executable pseudocode." While not inherently "visual" in the same way as Visual Basic, Python offers
+ powerful libraries like Tkinter, PyQt, and Kivy for creating graphical user interfaces. Instead of a drag-and-
+ drop interface, developers use code to define and arrange interface elements such as buttons, labels, and
+ windows. Python's versatility enables programmers to build a wide range of applications, from web
+ applications and data analysis tools to desktop applications and games.
+
+
+
+
+                                      Student A                             Student B
+
+ Who developed the programming
+ language and in what year was it
+ first released?
+
+ What does the name of the
+
+
+
+
+                                                   9
+                                                                                         Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                             Booklet Inglés II
+ language (or a part of it) stand for
+ or what inspired it?
+
+ How is the language used to
+ create user interfaces, and what
+ are some examples of interface
+ elements that can be created?
+
+ What types of applications can
+ programmers create using this
+ language?
+
+
+
+
+Working in the IT industry.
+
+READING. Read the memo. What is Lila writing about?
+
+
+ FROM: Chief Information Officer
+ TO: All Staff
+ DATE: June, 17th
+ SUBJECT: XBM Digital rules
+
+ Dear all,
+         As you know, many new staff joined us at XBM Digital, so now is a good time for a reminder about
+ some of our rules.
+         Firstly, passwords are important to keep our network secure. Natasha is the person who sets the
+ passwords and usernames at first. As soon as she gives them to you, you need to change the passwords
+ which have to be alphanumeric and at least eight characters long. Also, you should not share them with
+ anyone. You might find it difficult, but you can ask Natasha for help.
+         Secondly, the hardware that we have in our offices is delicate. You mustn't eat or put drinks near
+ the computers. You can take short breaks for eating and drinking. You must do it in the dining room
+ where all our staff eat everyday . You don’t have to spend time cleaning your stuff, Rudy and Mike will
+ take care of that for you.
+         Best regards,
+         Lila Davis
+
+
+GRAMMAR. Modal verbs
+
+FORM. Look at the words in bold and complete the rule.
+
+   ●   The verb that follows a modal verb is...
+          a) Present participle
+
+
+
+
+                                                  10
+                                                                                        Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+           b) Past participle
+           c) Infinitive verb
+
+FUNCTION. Complete the chart with examples from the text and analyse the function of each modal
+verb.
+
+
+ Example                                                     Function
+
+ you (1) ______ _______ it in the dining room…               Personal obligation / strong necessity
+ you (2) ________ ______ ________ the passwords
+
+ …which (3) _______ _______ ______ alphanumeric…             External obligation
+
+ You (4) _________ ________ or put drinks near the           Prohibition
+ computers.
+
+ You (5) ________ _______ _______ ________ time              Lack of necessity / Lack of obligation
+ cleaning your stuff
+
+ you (6) ________ ________ _______ them with                 Advice
+ anyone.
+ You should buy a new computer.
+
+ You (7) ________ ______short breaks for eating and          Ability / inability
+ drinking.
+ I could not swim when I was a child. (Past)
+ You will be able to program in nearly every language
+ when you finish this course. (future)
+
+ You (8) ________ ________ it difficult                      Possibility
+ I may go to the party, but I still don’t know.
+
+ Can I go to the toilet, please?                             Request / Asking for permission / ask for or
+ Could you tell me where the restroom is?                    offer help
+ May I help you?
+
+
+LANGUAGE WORK.
+a) Complete the sentences with the appropriate modal verbs. There’s an extra modal verb that you
+don’t need to use:
+Should - can - don’t have to - might - have to - must - mustn’t - doesn’t have to
+
+   1) We __________ have a picnic tomorrow, but it depends on the weather. (possibility)
+   2) You ___________ wear a suit to the interview. (Advice)
+   3) Mary! you ______________ come to your aunt’s birthday next Saturday night. (Lack of
+      necessity)
+
+
+
+
+                                                  11
+                                                                                       Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                             Booklet Inglés II
+   4)   You __________ smoke here! (Prohibition)
+   5)    ___________ I go to the toilet, please? (request/ask for permission)
+   6)    Lisa __________ tidy her room before she goes out! (personal obligation)
+   7)   In Britain you __________ drive on the left. (external obligation)
+
+b) Write sentences...
+
+a) ...giving advice to a friend as regards the clothes to wear on a party.
+______________________________________________________________________________
+b) ...asking for permission to do something in a polite way.
+______________________________________________________________________________
+c) ...describing a certain ability of your friend.
+______________________________________________________________________________
+d) ...a rule that you obey at work/university. (external obligation)
+______________________________________________________________________________
+e) ...something that you do because of personal obligation.
+______________________________________________________________________________
+f) ...something that is prohibited to you.
+______________________________________________________________________________
+g) ...something that you don't need to do. (lack of necessity)
+______________________________________________________________________________
+
+GRAMMAR. Relative clauses
+
+What is the difference between a sentence and a clause? Now, look at the underlined words in the
+memo above and choose the correct options to complete the rules.
+
+1. The words that, where, who and which…
+            a) Introduce a new clause with information about something mentioned previously.
+            b) Introduce a new clause with information about something we didn’t mention.
+2. The relative clauses are found…
+            a) At the beginning of a sentence.
+            b) Following a previous clause or noun phrase.
+3. The relative clause can be…
+            a) part of the subject.
+            b) part of the predicate.
+            c) both previous options.
+4. We use the relative pronoun who (that can usually be replaced by that)…
+            a) To refer to things.
+            b) To refer to people.
+5. We use the relative pronoun which (that can usually be replaced by that)…
+            a) To refer to things.
+            b) To refer to people.
+6. We use the relative pronoun where (that can’t be replaced by that)...
+            a) as the subject of the relative clause
+
+
+
+
+                                                 12
+                                                                                       Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                             Booklet Inglés II
+           b) followed by a subject in the relative clause.
+
+
+ Defining and non-defining relative clauses
+
+    ●   We use defining relative clauses to give essential information about someone or something. It
+        usually comes immediately after the noun it describes. We don’t use commas to mark its beginning
+        or end.
+ She is the woman who I met with yesterday.
+    ●   We often leave out the relative pronoun when it is the object of the verb:
+ They’re the people (that/who) she met at Jon’s office.
+ Here are some bugs (that/which) the developer has identified.
+    ●   We use non-defining relative clauses to give extra information about the person or thing. It is
+        not necessary information. We don’t need it to understand who or what is being referred to. We
+        use commas to mark the beginning and end of the non-defining relative clause. We can’t use the
+        relative pronoun ‘that’ to introduce a non-defining relative clause.
+ Clare, who I work with, is in charge of the project.
+
+
+LANGUAGE WORK. Relative clauses
+a) Complete the sentences with who, which or where.
+
+   1) Do you know the man ________ lives next door?
+   2) That’s the gallery __________ had the Leonardo Da Vinci exhibition.
+   3) Are those the people _______ are selling their house?
+   4) Do you know a good restaurant _________ is open on Saturday night?
+   5) Is that the bus __________ goes to the airport?
+   6) We walked past the school ___________ their children go.
+   7) She’s the woman _______ everyone is talking about.
+   8) I took my laptop back to the shop ___________ I bought it.
+   9) Antwerp is the city _________ I lived as a child.
+   10) Is there someone _________ can speak Arabic in your class?
+
+b) Write sentences with defining relative clauses using the prompts given:
+
+   a) Bus = central cable / link / computers
+      ___ A bus is a central cable which/that links computers _____________________
+   b) Customers = people / buy / things
+      _________________________________________________________________
+   c) Production facilities = places / manufacture / products
+      _________________________________________________________________
+   d) WAN = type of network / cover / large areas
+      ________________________________________________________________
+
+
+
+
+                                                   13
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+HOMEWORK TO HAND IN
+WRITING. Describing functions and features.
+
+Read the instructions below and write a description of the Sony PlayStation 3 controller.
+
+
+ Describing functions and features
+
+ We can describe functions and features by using:
+   ● a preposition + a gerund
+       This is a device for controlling the cursor
+       and selecting items on the screen.
+   ● An infinitive to express purpose
+       It is used to control…
+   ● A relative clause
+       This device, which is an input device, is
+       used to…
+       This is a device which is used to…
+   ● A modal verb + bare infinitive
+       You can connect it to the computer…
+ We can also describe features like this:
+   ● An optical mouse has an optical sensor
+       instead of a ball underneath.
+   ● It usually features two buttons and a
+       wheel.
+   ● A wireless mouse operates/works without
+       cables.
+   ● It allows the user to answer multiple-choice
+       questions…
+
+
+
+
+Unit N° 2 - Gaming
+
+SPEAKING. The following pictures were extracted from different popular video games of all times.
+In pairs or small groups, decide which names they belong to. Then, guess their years of release.
+
+
+
+
+                                                 14
+                                                                                                Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                   Booklet Inglés II
+
+
+
+
+Discuss with your partners:
+    ● Have you ever played any of the games above? If so, which ones? If not, which ones would
+       you like to try?
+    ● Which one do you think is the best? Why?
+
+READING COMPREHENSION. a) Read the following article about game genres. Which genres do
+the games from the previous ex. belong to?
+
+
+ Game Genres
+
+ With the rapid evolution of the gaming industry, genres have been expanding and blending, making it
+ increasingly difficult to classify every game into a single category. In this article, we'll explore the major
+ genres that define today's gaming landscape.
+
+ First-person shooters (FPS) and Action games have been dominating the market. Iconic franchises like
+ Call of Duty and Battlefield remain strong, while newer hits like Apex Legends and Valorant have been
+
+
+
+
+                                                    15
+                                                                                            Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+redefining competitive FPS gameplay. In the Action genre, open-world experiences such as the Grand
+Theft Auto series, Red Dead Redemption 2, and the highly anticipated GTA VI have been pushing
+boundaries in storytelling and realism.
+
+Role-playing games (RPGs) have remained a cornerstone of both console and PC gaming. Titles like
+Elden Ring, Cyberpunk 2077, and Baldur’s Gate 3 have set new standards for immersive storytelling and
+player choice. The rise of live-service RPGs, such as Genshin Impact, has revolutionized the genre, offering
+expansive worlds and frequent content updates. Massively multiplayer online RPGs (MMORPGs) have
+been continuing to thrive, with games like Final Fantasy XIV and World of Warcraft maintaining dedicated
+player bases.
+
+Adventure and Puzzle games have been experiencing a resurgence, thanks to indie developers and
+innovative mechanics. Story-driven experiences like The Legend of Zelda: Tears of the Kingdom and
+puzzle-based narratives like The Witness and Portal have been captivating players. The party game genre
+has also been evolving, with titles like Among Us and Fall Guys introducing new social and competitive
+elements.
+
+Sports games remain a significant part of the industry, with franchises like FIFA (now EA Sports FC),
+NBA 2K, and Madden NFL leading the way. Meanwhile, racing games such as Forza Horizon and Gran
+Turismo have been pushing the limits of realism and gameplay depth.
+
+The Simulation genre has been expanding beyond traditional life simulators. While The Sims 4 remains a
+dominant force, newer titles like Stardew Valley and Animal Crossing: New Horizons have been offering
+fresh takes on virtual life. Flight simulators and city-building games, like Microsoft Flight Simulator and
+Cities: Skylines, have also been surging in popularity.
+
+Strategy games, once primarily a PC domain, have been gaining traction on consoles thanks to improved
+controls and cross-platform play. Games like Civilization VI, XCOM 2, and Total War: Warhammer III have
+been attracting tactical minds, while real-time strategy (RTS) games like Age of Empires IV have been
+maintaining the genre’s legacy.
+
+Fighting games have entered a new era with advanced mechanics and competitive esports scenes. Titles
+like Street Fighter 6, Tekken 8, and Super Smash Bros. Ultimate have been pushing the genre forward,
+incorporating refined gameplay and online matchmaking for global tournaments.
+
+As gaming technology advances, the landscape of genres will continue to evolve. By 2035, developers will
+have fully integrated artificial intelligence, virtual reality, and cloud-based gaming into mainstream titles.
+We will have witnessed the rise of entirely AI-generated open-world games, where player choices shape
+narratives in unprecedented ways. Furthermore, the boundaries between genres will have blurred even
+more, creating experiences that defy traditional classification, ensuring that gaming remains one of the
+most dynamic forms of entertainment.
+
+
+
+
+                                                  16
+                                                                                        Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                            Booklet Inglés II
+
+b) These statements about games are all mistaken. Correct them.
+
+   1) Roleplay games are currently the most popular ones.
+      _______________________________________________________________
+   2) Adventure and Puzzle games have always remained as the dominant choice.
+      _______________________________________________________________
+   3) Forza Horizon is a Strategy game.
+      _______________________________________________________________
+   4) The Sims Series is the least popular in the Simulation category.
+      _______________________________________________________________
+   5) Strategy games can only be played using a PC.
+      _______________________________________________________________
+   6) Street Fighter 6 is not a fighting game.
+      _______________________________________________________________
+
+GRAMMAR. Present Perfect Continuous
+Reflect upon grammar. Read the text above again and find examples of sentences which contain
+Present Perfect Simple tense.
+   ● Do you remember its structure?
+   ● When do you use Present Perfect Simple?
+   ● Can you identify any other similar structure in the text? How are they different in terms of
+       meaning?
+
+FORM. Complete the chart with examples from the text.
+
+
+ Affirmative                  Negative                 Interrogative             Short answers
+
+ Adventure and Puzzle         First-person shooters    Have FPS and Action       Yes, they have.
+ games (1) __________         (FPS) and Action games   games been dominating     No, they haven’t.
+ _________________a           have not (haven’t)       the market?
+ resurgence, thanks to        been dominating the
+ indie developers and         market.
+ innovative mechanics.
+ (I/we/you/they)
+
+ The Simulation genre (2)     The party game genre     Has it been evolving?     Yes, they has.
+ __________________           has not (hasn’t) been                              No, they hasn’t.
+ ___________________          evolving.
+ beyond traditional life
+ simulators.
+ (he/she/it)
+
+
+
+
+                                                 17
+                                                                                           Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+
+FUNCTION. Choose the rules that apply to Present Perfect Continuous tense.
+
+a) To talk about recent activities when the effects can still be seen.
+b) To talk about single actions that started and finished in a particular moment in the past.
+c) With action verbs to emphasise the completion of an event in the recent past.
+d) To emphasise how long an action has been going on or if it has been repeated many times.
+e) To suggest that an activity is temporary.
+f) To talk about an unfinished period of time up to the present, but not necessarily to suggest that
+the action will continue for a short period of time.
+g) To suggest that an action is not complete while it should have been completed by the time of
+speaking.
+
+Which of the previous rules could explain Marge’s
+question?
+
+LANGUAGE WORK: the present perfect
+   a) Choose the correct words in brackets to
+      complete these sentences.
+1 He ('s never liked /'s never been liking) Maths.
+2 They ('ve worked/'ve been working) on the
+project all day.
+3 John ('s used/'s been using) the computer for
+hours - he looks really tired.
+4 How many emails (have you written/ have you
+been writing) today?
+5 She ('s written/'s been writing) this essay since 9
+o'clock.
+6 They ('ve interviewed/'ve been interviewing) five
+candidates today.
+
+
+   b) Make questions using these prompts.
+
+1 ever / live or work in another country?
+______________________________________________________
+2 ever / have a bad job interview?
+______________________________________________________
+3 ever / do a job you hated?
+______________________________________________________
+4 how long / study English?
+
+
+
+
+                                                     18
+                                                                                               Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                  Booklet Inglés II
+______________________________________________________
+5 how long / study programming?
+______________________________________________________
+6 how many emails / receive today?
+______________________________________________________
+7 how many jobs / apply for this year?
+______________________________________________________
+
+SPEAKING. Work with a partner. Ask and answer the questions in ex b
+
+GRAMMAR. Future perfect
+
+Look back to the last paragraph of the text “Game genres”. Can you name the advances that will
+occur in gaming technology?
+
+Reflect upon grammar. Read this sentence extracted from the text and choose the best answer to
+the following question:
+
+“By 2035, developers will have fully integrated artificial intelligence, virtual reality, and cloud-based
+gaming into mainstream titles.”
+
+   ●    What will happen first?
+          a) 2035 arrives
+          b) developers fully integrate AI, virtual reality and cloud-based gaming into mainstream
+              titles.
+
+FORM.
+
+
+ Affirmative                  Negative                    Interrogative                Short Answers
+
+ We will have                 We will not (won’t)         Will we have                 Yes, we will.
+ witnessed the rise of        have witnessed the          witnessed the rise of        No, we won’t.
+ entirely AI-generated        rise of entirely AI-        entirely AI-generated
+ open-world games.            generated open-world        open-world games?
+                              games.
+
+
+FUNCTION. We use the future perfect form when we look back to the past from a point in the
+future. We usually use a time phrase, for example:
+    - by tomorrow, 2035, 7 o’clock, this evening…
+    - before Tuesday, July, 2030…
+    - this time next week, year, Sunday…
+    - in ten years (time), two weeks (time)...
+
+
+
+
+                                                    19
+                                                                                         Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+LANGUAGE WORK. a) Choose the event which happens first.
+   1) By the time the new gaming console is released, developers will have created hundreds of
+      new games.
+       a) The new gaming console is released.
+       b) Developers create hundreds of new games.
+
+
+   2) By the end of the tournament, the champion will have defeated all opponents.
+       a) The champion defeats all opponents.
+       b) The tournament ends.
+
+
+   3) You will have unlocked all the special abilities by the time you reach level 50.
+       a) You unlock all the special abilities.
+       b) You reach level 50.
+
+
+   4) By midnight, we will have completed the final mission in the game.
+       a) We complete the final mission.
+       b) It is midnight.
+
+
+b) Complete the sentences using the correct form of the verbs in brackets.
+1- By the end of the year, I (save) ________________________ £5oo.
+2- By this time next year, my father (spend) ____________________ five years in France.
+3- Scientists (possibly/develop) ______________________ a new vaccine for AIDS in twenty years
+time.
+4- By the end of this week, I (not be able) ____________________ to finish the report.
+5- When you get to the airport, _____________ Paul (already/arrive) _____________________?
+6- I (leave) __________________ by seven.
+
+
+LISTENING. Call centres: are you talking to an AI?
+Have you ever phoned up a company and had your call held in a queue? Could AI make this less
+painful?
+
+
+VOCABULARY. Match the words (1-6) to its meanings (a-f).
+   1) yelling
+
+
+
+
+                                                  20
+                                                                                            Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+    2)   pacify (someone)
+    3)   in the near future
+    4)   as a matter of fact
+    5)   empathetic
+    6)   you know
+
+
+a) (filler word) used to give the speaker time to think, or to express uncertainty
+b) shouting
+c) used to add emphasis to a statement, to give more detail about what has just been said, or to
+introduce something that contrasts with it.
+d) calm down someone who is angry.
+e) able to put yourself into someone else’s position and share their feelings or experiences.
+f) very soon, within a short time
+
+
+Approximately how many people work in call centres globally? Answer the question. Then, listen and
+check your answers.
+
+
+a) 7 million?
+b) 17 million? or,
+c) 27 million?
+
+
+LISTENING AND SPEAKING HOMEWORK. Throughout Inglés I and Inglés II you’ve been learning
+a lot of vocabulary, grammar and skills in general that can place you between a pre-intermediate and
+an intermediate learner of English. It’s time to enhance your listening and speaking skills in order to
+become an independent learner. From now on, every class you’ll start teaching the whole class a
+new expression that is currently being used. Go to
+https://www.bbc.co.uk/learningenglish/features/the-english-we-speak_2025 , choose a video, listen
+to it as many times as you need and the following class you’ll teach your classmates the expression
+you’ve learnt.
+
+
+
+ HOW TO SAY IT
+ The video I chose was about…
+ The expression I’ve learnt is…
+ It means that…
+ An example of “...” is…
+ It is similar to…
+ It is the opposite to…
+
+
+
+
+                                                   21
+                                                                                             Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+
+
+
+Unit N° 3 - A little bit of history
+
+
+READING COMPREHENSION. Read the text. Did you know any of the information provided?
+
+A little bit of History*
+The Facultad Regional de Avellaneda was created on March 31, 1955 by Resolution 382/55 of the National
+Commission for Learning and Professional Orientation, under the jurisdiction of the Universidad Obrera
+Nacional. The establishment of this college was part of one of the objectives of the Second Five-Year Plan
+of Juan Domingo Perón’s government, which aimed at the creation of institutes like this one to provide
+graduates with advanced knowledge that would qualify them to lead and manage activities within the
+national economic framework.
+However, to fully understand its origins, we must go back a few years. On August 19, 1948, the National
+Workers’ University had been created through the enactment of Law 13,329. This law designated it as an
+institution of higher education “...designed to provide the solution the country was seeking: new
+professionals in the field of engineering.” This was a particularly significant period in Argentina’s history,
+marked by a flourishing and expanding industry, where the import substitution model was at its peak.
+"The government's policy was clear: on the one hand, to create living conditions far superior to those of
+the time, producing a true social revolution, and on the other, to provide specialized labor that the
+emerging national industry required. A class of workers capable of deepening the country’s development,
+destined to meet an increasingly important demand."
+This new social context “…led a group of professionals, teachers from the Otto Krause Industrial School, to
+unite in search of a high-level solution.” Thus, the objective was to:
+   ●   Provide a higher education path for graduates of industrial schools or the final cycle of institutions
+       under the National Commission for Learning and Professional Orientation, particularly in
+       engineering and its various specializations.
+   ●   Offer access to university education to a large number of students, mostly from lower-income and
+       middle-class backgrounds.
+The creation of the Universidad Obrera Nacional brought these goals to fruition.
+However, with the rise of the 1955 dictatorship, this university—born within a clear national political
+project—came under heavy scrutiny and was on the verge of disappearing. This abrupt shift in national
+policy led to an institutional crisis within the Universidad Obrera Nacional and, consequently, the newly
+established Facultad Regional de Avellaneda.
+To address this crisis, Law 14,855, enacted on October 14, 1959, granted the university a new autonomous
+legal framework, aligning it with other national universities. As a result, it ceased to depend on the former
+National Commission for Learning and Professional Orientation and was renamed the National
+Technological University (Universidad Tecnológica Nacional, UTN).
+
+
+
+
+                                                   22
+                                                                                                     Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                      Booklet Inglés II
+The city of Avellaneda was chosen as the site for one of the first colleges of the National Technological
+University (UTN). For a long time, it was the only national university-level institution in this area of Gran
+Buenos Aires. Located in the heart of the city for more than fifty years, it now has two buildings.
+The main building, located in front of the plaza and shared with other educational institutions, hosted its
+first courses on May 5, 1955, marking the origins of the college known as the "Workers’ University".
+Due to a rapid increase in student enrollment, this building soon became insufficient. As a result, a new
+campus was built in Villa Domínico, at the intersection of Mitre and Ramón Franco Avenues, on land
+granted to the university for the college’s operation.
+                                                       * Extracted and Translated form https://fra.utn.edu.ar/institucional/
+
+
+
+
+b) Read the text again and answer the following questions:
+   1) When and why was the Facultad Regional de Avellaneda created?
+       ________________________________________________________________________.
+   2) What was the main objective of the Second Five-Year Plan regarding higher education?
+       ________________________________________________________________________.
+   3) What was the purpose of the Universidad Obrera Nacional, and when was it established?
+       ________________________________________________________________________.
+   4) How did the government’s industrial and social policies influence the creation of this
+      university?
+       ________________________________________________________________________.
+   5) What challenges did the Universidad Obrera Nacional face after the 1955 dictatorship?
+       ________________________________________________________________________.
+   6) How did Law 14,855 change the legal status of the university?
+       ________________________________________________________________________.
+   7) Why was Avellaneda chosen as the location for one of the first colleges of UTN?
+       ________________________________________________________________________.
+   8) What led to the construction of a second campus in Villa Domínico?
+       ________________________________________________________________________.
+
+
+GRAMMAR. The passive
+Reflect upon grammar. Look back at the first sentence in the text. Can you identify its verb phrase?
+Which is the first verb? In which form is the second verb? In what tense is the sentence written?
+How do you know?
+
+
+
+
+                                                  23
+                                                                                          Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+ The object of an active sentence becomes the subject of the passive sentence. We can use the word by
+ to say who or what did something in a passive sentence.
+
+ SIMPLE PRESENT ACTIVE: “I write a sentence in the simple past.” (S + V + O)
+ SIMPLE PRESENT PASSIVE: “The sentence is written in the simple past (by me).” (old O + IS/ARE/AM +
+ PAST PARTICIPLE + by + old S)
+
+ SIMPLE PAST ACTIVE: “Two students created Google in 1998.” (S + V + O)
+ SIMPLE PAST PASSIVE: “Google was created by two students in 1998.” (old O + WAS/WERE + PAST
+ PARTICIPLE + by + old S)
+
+ FUTURE SIMPLE ACTIVE: “In 2026, Elon Musk will send the first orbital flight of Starship to Mars.” (S + V +
+ O)
+ FUTURE SIMPLE PASSIVE: “In 2026, the first orbital flight of Starship will be sent to Mars.” (old O + WILL
+ BE + PAST PARTICIPLE + by + old S)
+
+
+LANGUAGE WORK.
+   A) Are these sentences Active or Passive?
+
+   1) Steven likes to play basketball. ___
+   2) Bingo is played in Britain. ___
+   3) He lost his keys yesterday. ___
+   4) A house will be bought by them. ___
+   5) A letter was written. ___
+   6) These cars are produced in Italy. ___
+   7) Lots of houses were destroyed. ___
+   8) I will go to Egypt one day. ___
+
+B) Rewrite the Active sentences into Passive form:
+
+1)- They understand Spanish.
+______________________________________________________________________________
+2)- My friend bought a new car.
+______________________________________________________________________________
+3)- John cleaned the bathroom.
+______________________________________________________________________________
+4)- The teacher closes the window.
+______________________________________________________________________________
+5)- The professor will show the students an old bone.
+______________________________________________________________________________
+6)- Snow covered the mountains.
+______________________________________________________________________________
+7)- They will send astronauts to the moon.
+______________________________________________________________________________
+8)- Frida Kahlo painted around 200 masterpieces.
+
+
+
+
+                                                 24
+                                                                                           Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+______________________________________________________________________________
+
+
+GRAMMAR. Past Perfect
+Reflect upon grammar. Look at the following sentence. Which of the two actions happened first?
+In which verb tense is the second action written?
+“The government had created the Universidad Obrera Nacional before the Facultad de Avellaneda
+was established.”
+
+
+FORM
+
+ Affirmative                  Negative                   Interrogative              Short Answer
+
+ By the time the              By the time the            By the time the            Yes, it had.
+ dictatorship began in        dictatorship began in      dictatorship began in      No, it hadn’t.
+ 1955, the university had     1955, the university had   1955, had the university
+ already started              not (hadn’t) already       already started
+ offering courses.            started offering           offering courses?
+                              courses.
+
+
+FUNCTION. Choose the correct option. We use the past perfect to talk about…
+   a) Something that happened before a specific time in the past.
+   b) Something that happened a very long time ago.
+
+
+LANGUAGE WORK. Complete the sentences with the correct past simple or past perfect of the
+verbs in brackets.
+
+
+   1) When we __________________ (arrive), our parents _____________ already
+      ______________ (eat).
+   2) I _______________ already ______________ (have) two jobs by the time I
+      _______________ (be) 18.
+   3) I _______________ just _________________ (finish) my work when you _____________
+      (phone).
+   4) By the age of five, my brother ______________ already ________________ (learn) how to
+      use a computer.
+   5) We __________________ (not finish) our exam when the bell _____________ (ring).
+   6) I _______________ (go) to New York last summer. I _______________ never
+      _______________ (go) there before.
+   7) Why _________________ we ______________ (not see) this movie before last night?
+   8) _________________ you already _____________ (meet) Sally when you
+      __________________ (start) university?
+
+
+
+
+                                                    25
+                                                                                         Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                             Booklet Inglés II
+SPEAKING. Talking about memories. Complete the sentences about your experiences. Then write
+suitable questions to ask your partner about their experiences.
+
+    ●   By the time I was …, I had already…
+    ●   When I … for the first time, I had never …
+    ●   When …, I hadn’t … yet.
+    ●   When…, I had just ...
+
+
+Unit N° 4 - Networks
+LISTENING. Listen to two technicians talking about video conferencing technology. Choose the
+correct option. (English for IT 2 - track 32)
+
+    1) At the beginning of the conversation, the woman mentions some types of video
+       conferencing systems. They are…
+           a) Dedicated system and desktop system.
+           b) Dedicated system, desktop system and compression system.
+           c) Dedicated system only.
+    2) To use a desktop system you need...
+           a) A special room with its own hardware.
+           b) An ordinary PC and some hardware.
+           c) A set of high definition monitors and a video camera for each participant with a
+              remote control.
+    3) MCU (Multipoint control unit) will be useful if…
+           a) You need to hold a video conference between only three different locations.
+           b) You need to hold a video conference between two different locations.
+           c) You need to hold a video conference between more than three locations.
+    4) The man says that if they had a video conferencing system, ...
+           a) They would use less bandwidth.
+           b) They could connect to their Tokio, Dubai and Paris offices.
+           c) They might see each other’s faces.
+
+FORM
+
+Type 0: "If you heat ice, it melts."
+         If + ______________________________ , ___________________________________
+
+Type 1: "If you don't hurry, you will miss the train."
+          If + _______________________________ , will/can/may + ________________________
+
+Type 2: "If I had a lot of money, I would travel all over the world."
+          If + ________________________________ , would/could/might + _______________
+
+Type 3: "If I had known you had a swimming pool, I would have brought my bikini."
+
+
+
+
+                                                     26
+                                                                                      Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                          Booklet Inglés II
+         If + ______________________________, would/could/might + ________ + _________
+
+
+
+FUNCTION. True or false? Justify the false ones.
+
+1) Conditional sentences always have only one clause.
+______________________________________________________________________________
+2) Conditional sentences describe the result of something that might happen or might have
+happened but didn't.
+______________________________________________________________________________
+3) Conditionals type 0 are used to describe past actions.
+______________________________________________________________________________
+4) Conditional sentences type 1 describe a possible condition and its probable result.
+______________________________________________________________________________
+5) Conditionals type 2 describe a real situation in the past.
+______________________________________________________________________________
+6) Conditional sentences type 3 refer to an unreal past condition and its probable result in the
+present.
+______________________________________________________________________________
+
+LANGUAGE WORK. Complete the conditional sentences with the correct form of the verbs in
+brackets:
+
+a) If you _____________ (mix) yellow and red, you __________ (get) orange. (Type 0)
+b) If I __________________ (know) It was going to rain, I __________________ (bring) my
+umbrella. (Type 3)
+c) Simon ______________ (go) to Mendoza this weekend if he __________________ (find) a cheap
+flight. (Type 1)
+d) If you ________________ (not help) endangered species, they __________________ (disappear)
+soon. (Type 1)
+e) I _______________ (study) harder if I ________________ (have) more time. (Type 3)
+f) My sister_________________ (have) a baby if she _______________ (work) less hours. (Type 2)
+g) The water ____________________ (boil) if you ____________________ (heat) it up to 100°C.
+(Type 0)
+h) If I ________________ (be) you, I ___________________ (rent) a new apartment. (Type 2)
+
+LISTENING. A) Listen to an extract from a lecture about networks and answer these questions.
+(Infotech – Track 34)
+
+
+   1) What does LAN stand for?
+       ______________________________________________________________________.
+   2) Where are LANs usually located?
+       ______________________________________________________________________.
+
+
+
+
+                                                   27
+                                                                                Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                        Booklet Inglés II
+   3) What is the difference between a wired LAN and a wireless LAN?
+        ______________________________________________________________________.
+
+
+B) Listen again and label the elements of this LAN
+
+
+   1)   _____________________
+   2)   _____________________
+   3)   _____________________
+   4)   _____________________
+   5)   _____________________
+   6)   _____________________
+
+
+
+
+READING. Read the following text. Why can it cause a slow connection?
+
+
+
+
+                                                 28
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+ Setting up a network requires careful planning and the right equipment. First, you need to set up a
+ connection by choosing a reliable internet provider. Then, you must plug into the main router to access
+ the network. Many companies carry out security checks to ensure that their networks are safe.
+
+ When creating an online account, users must sign up by providing their details and fill in registration
+ forms. After that, they need to type in their username and password to log in. If they want to test the
+ network speed, they can try out different online tools.
+
+ If there is a problem, IT specialists look for solutions and find out what is causing the issue. Sometimes, a
+ slow connection is due to multiple devices taking up too much bandwidth. To fix this, users should switch
+ off unnecessary devices and turn on only the essential ones.
+
+ A network is made up of various components, including routers, servers, and connected devices. Whether
+ at work or home, staying connected is essential in today's digital world.
+
+
+VOCABULARY. Read the text again and match the phrasal verbs below (1-12) to their meanings (a-
+l). Try to infer meaning from context.
+   1) set up                  a) connect
+   2) plug into               b) start or use experimentally
+   3) carry out               c) establish
+   4) sign up                 d) write the necessary information
+   5) fill in                 e) register, enroll in a service
+   6) type in                 f) execute
+   7) try out                 g) stop the operation of something
+   8) look for                h) learn, discover
+   9) find out                i) constitute, form
+   10) switch off             j) start the operation of something
+   11) turn on                k) occupy
+   12) make up                l) search
+
+
+
+ Phrasal verbs
+ A phrasal verb is an idiomatic phrase consisting of a verb and another element, typically either an adverb
+ or a preposition.
+     ● The meaning of some verbs with particle (often called phrasal verbs) can be easily understood
+         from its two parts.
+               Look at the photos.
+               A network consists of two or more...
+              Separate networks are linked over a public network, the Internet.
+    ●   However, many phrasal verbs have an idiomatic meaning, not predictable from the meaning of its
+        parts.
+
+
+
+
+                                                  29
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+ carry (= transport); carry out (= execute)
+               Computers carry out the programs...
+    ●   Certain particles have similar meanings, regardless of the verb (on/off, in/out, etc.).
+ turn on / switch on, turn off / switch off
+    ●   When the verb has a preposition associated with it, the preposition must precede the object:
+              You can look for information on the Web. (not look information for)
+              Hackers might break into your PC (not break your PC into)
+    ●   When the particle is an adverb, it can precede or follow the direct object:
+             You need to type in your username/ ... type your username in.
+             You can look up words in a dictionary/ ... look words up in a dictionary.
+            Turn on the computer./ Turn the computer on.
+    ●   If the direct object is a pronoun, the particle must follow it
+             You need to type it in. (not: type in it)
+
+
+
+HOMEWORK. Click on this link https://www.liveworksheets.com/w/en/english-second-language-
+esl/1430449 and do the worksheet. Here you’ll revise present perfect simple, present perfect
+continuous, simple past and past perfect. You’ll also learn some more phrasal verbs. The worksheet
+should be completed using capital letters and do not use contractions.
+
+
+
+Unit N° 5 - The evolution of Information Technology
+READING COMPREHENSION. In groups, read the text and answer the following questions:
+
+The Evolution of Information Technology
+
+In today's interconnected world, information technology (IT) plays a pivotal role, so the way we
+communicate, work, and live is still being transformed. Throughout history, remarkable advancements
+have been experienced by IT, driven by a combination of technological breakthroughs and societal
+demands. In this text, the evolution of IT will be explored, highlighting key developments and their
+impact on various aspects of our lives. Although technology has helped us a lot, privacy and security
+don’t have to be underestimated.
+
+To begin with, the origins of IT can be traced back to the mid-20th century when computers emerged
+as powerful tools for data processing. The first computers, which were the size of entire rooms, were
+mainly used for complex calculations and data storage. After that, in the 1970s, personal computers
+(PCs) revolutionized the IT landscape because they brought computing power to individuals. This
+
+
+
+
+                                                   30
+                                                                                            Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+marked the beginning of a new era, where PCs became increasingly affordable, compact, and user-
+friendly.
+
+Over the years, IT has witnessed significant advancements which were facilitated by rapid
+technological innovation. One notable breakthrough occurred in the 1990s with the advent of the
+World Wide Web. This revolutionary platform enabled seamless information sharing and transformed
+the way we access knowledge, connect with others, and conduct business. As a result, a vast array
+of online services and applications emerged, shaping the digital landscape we navigate today.
+
+In recent years, IT has embraced groundbreaking technologies such as artificial intelligence (AI), the
+Internet of Things (IoT), and cloud computing. AI, for instance, has the potential to automate
+repetitive tasks, enhance decision-making processes, and even simulate human-like intelligence. The
+IoT, on the other hand, connects various devices and sensors, enabling efficient data collection,
+analysis, and communication. Additionally, cloud computing offers a scalable and flexible
+infrastructure for storing and accessing data and applications. It is important to note that along with
+the benefits that have been brought by these technologies; however, there are also concerns
+regarding privacy and security in the realm of IT.
+
+In conclusion, IT has undergone a remarkable evolution, transforming our society in profound ways.
+From the emergence of computers to the digital age of the internet and the latest advancements in
+AI, IoT, and cloud computing, IT continues to shape our lives and drive innovation. Therefore, it is
+crucial to embrace and adapt to these technologies, harnessing their potential to create a more
+connected and efficient world.
+
+
+
+   1) What role did personal computers play in the evolution of IT?
+      ________________________________________________________________________.
+   2) When did the World Wide Web emerge and how did it transform information sharing?
+      ________________________________________________________________________.
+   3) What are some of the groundbreaking technologies that IT has embraced in recent years?
+      ________________________________________________________________________.
+   4) How does artificial intelligence (AI) contribute to the advancement of IT?
+      ________________________________________________________________________.
+   5) What are the benefits of cloud computing in the IT landscape?
+      ________________________________________________________________________.
+
+GRAMMAR. Passive voice.
+Look back at the text and underline all the verbs “to be” followed by a past participle. In which
+tenses are these sentences written?
+
+FORM. Complete the chart using the correct form of the passive voice structure in each verb tense:
+
+
+
+
+                                                  31
+                                                                                      Inglés II
+                       Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                          Mónica - Spizzamiglio, Carla
+                                                                          Booklet Inglés II
+                     Active sentence       Affirmative         Negative              Interrogative
+
+Present continuous   1. The employee is    1. The email is     1. The email isn't    1. Is the email
+                     sending the email.    being sent by the   being sent by the     being sent by the
+                                           employee.           employee.             employee?
+
+                     2. The user is        2. The file         2. The file           2. ____ the file
+                     downloading the       ______________      ______________        _______________
+                     file from the         from the internet   from the internet     _________ from
+                     internet.             by the user.        by the user.          the internet by the
+                                                                                     user?
+
+Past Continuous      1. The employee       1. The email was    1. The email wasn't 1. Was the email
+                     was sending the       being sent by the   being sent by the   being sent by the
+                     email.                employee.           employee.           employee?
+
+                     2. The user was       2.______________    2.______________      2.______________
+                     installing the        _______________     _______________       _______________
+                     software on the       _______________     _______________       _______________
+                     computer.             _______________     _______________       _______________
+                                           _______________     _______________       _______________
+                                           ______________      ______________        ______________
+
+
+Present Perfect      1. The employee       1. The email has    1. The email hasn’t   1. Has the email
+                     has sent the email.   been sent by the    been sent by the      been sent by the
+                                           employee.           employee              employee?
+
+                     2. The technicians    2.______________    2.______________      2.______________
+                     have fixed the        _______________     _______________       _______________
+                     malfunctioning        _______________     _______________       _______________
+                     server.               _______________     _______________       _______________
+                                           _______________     _______________       _______________
+                                           ______________      ______________        ______________
+
+Past Perfect         1. The employee       1. The email had    1. The email          1. Had the email
+                     had sent the          been sent by the    hadn´t been sent      been sent by the
+                     email.                employee.           by the employee.      employee?
+
+                                           2.______________    2.______________      2.______________
+                     2. They had saved     _______________     _______________       _______________
+                     the document to       _______________     _______________       _______________
+                     the cloud storage.    _______________     _______________       _______________
+                                           _______________     _______________       _______________
+                                           ______________      ______________        ______________
+
+
+
+
+                                               32
+                                                                                      Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                           Booklet Inglés II
+ Future perfect         1. The employee      1. The email will1. The email will     1. Will the email
+                        will have sent the   have been sent bynot (won´t) have      have been sent by
+                        email.               the employee.    been sent by the      the employee?
+                                                              employee.
+                        2. The user will     2.______________ 2.______________      2.______________
+                        have visited the     _______________ _______________        _______________
+                        website.             _______________ _______________        _______________
+                                             _______________ _______________        _______________
+                                             _______________ _______________        _______________
+                                             ______________   ______________        ______________
+
+
+ Modal verbs            1. The employee      1. The email must   1. The email       1. Must the email
+                        must send the        be sent by the      doesn’t have to    be sent by the
+                        email.               employee.           be sent by the     employee?
+                                                                 employee.
+
+                        2. The programmer    2.______________    2.______________   2.______________
+                        can write the code   _______________     _______________    _______________
+                        for the new          _______________     _______________    _______________
+                        software update.     _______________     _______________    _______________
+                                             _______________     _______________    _______________
+                                             ______________      ______________     ______________
+
+
+LANGUAGE WORK. Fill in the blanks with the correct passive form of the verbs in brackets.
+
+   1.   Present Continuous:
+        a) A new security system _________________ (install) in the company's network right
+        now.
+        b) Important files _________________ (not transfer) to the cloud at the moment.
+        c) ____________ the new software ____________ (test) on all devices?
+
+   2. Past Continuous:
+      a) A critical update ______________ (apply) to the system when the power went out.
+        (affirmative)
+        b) The server _________________ (not monitor) properly when the cyberattack
+        occurred.
+        c) ___________ the Wi-Fi network ____________ (repair) during the outage?
+
+   3. Present Perfect Simple:
+      a) Several security measures ________ (implement) in the last few months.
+      b) The password policy ________ (not change) since last year.
+      c) __________ all the reports ________ (upload) to the database?
+
+
+
+
+                                                 33
+                                                                                        Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                            Booklet Inglés II
+   4. Past Perfect Simple:
+      a) By the time the IT team arrived, the malware ________ (remove) from the system.
+      b) The unauthorized access ________ (not detect) before the system crashed.
+      c) __________ the backup files ________ (save) before the server shut down?
+
+   5. Future Perfect:
+      a) By next year, a more advanced firewall ________ (develop) to improve security.
+      b) Sensitive data _____________ (not encrypt) by the end of the month if they don't act
+      quickly.
+      c) ______________ all the necessary updates _____________ (complete) before the
+      new system launches?
+
+   6. Modal Verbs:
+      a) Stronger passwords ______________ (should/use) to prevent hacking attempts.
+      b) Some network configurations ___________ (must/not/change) without administrator
+      approval.
+      c) ______________ remote access ________ (can/disable) to protect user data?
+
+
+GRAMMAR. Connectors
+
+
+ CONNECTORS, also called conjunctions, are words or expressions which we use to establish different
+ types of relationships between words or sentences. When we use connectors appropriately, we organise
+ what we say in a more logical, understandable way.
+
+
+Reflect upon punctuation. Look at the words in bold in the first text and then choose the correct
+options to complete the punctuation rules.
+
+   1) Use a comma / semicolon before words like but or so.
+   2) Use a full stop / comma before connectors like where, when, which, even though, since and
+      although when they come in the middle of a sentence.
+   3) Use / don’t use a comma after words like however, therefore, additionally and after that at
+      the beginning of a sentence.
+   4) Use a comma / semicolon before words like however, that is and on the other hand when
+      they come in the middle of a sentence.
+   5) When words like since, although and because appear at the beginning of a sentence, use a
+      comma / full stop at the end of the clause, not after the word.
+
+   ●   Highlight all the connectors in the following examples and then complete the chart adding
+       the connectors used in the text:
+
+
+
+
+                                                34
+                                                                                     Inglés II
+                    Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                       Mónica - Spizzamiglio, Carla
+                                                                         Booklet Inglés II
+Type of connector    Examples
+
+Contrast                1.    ____________ technology has helped us a lot, privacy and security don’t
+                             have to be underestimated.
+                        2.   Though smartphones have revolutionized communication, they can also be
+                             a source of distraction.
+                        3.   In spite of the increasing reliance on digital communication, many people
+                             still value face-to-face interactions.
+                        4.   Despite the fact that cybersecurity measures have improved, online threats
+                             continue to pose a significant risk.
+                        5.   On the one hand, technology has made our lives more convenient, but on
+                             the other hand, it has also led to concerns about privacy.
+                        6.   Instead of relying solely on traditional advertising methods, many
+                             companies now invest heavily in online marketing.
+                        7.   In contrast to traditional paper-based processes, digitalization has
+                             streamlined administrative tasks and increased efficiency.
+                        8.   It is important to note that [...] technologies; _____________, there are also
+                             concerns regarding privacy and security in the realm of IT.
+
+Addition                1.   Moreover, the Internet of Things (IoT) enables seamless connectivity
+                             between various devices, leading to improved efficiency and automation.
+                        2.   Furthermore, advancements in artificial intelligence (AI) have revolutionized
+                             industries such as healthcare, finance, and transportation.
+                        3.   In addition to the convenience of online shopping, e-commerce platforms
+                             provide a wide range of choices and competitive pricing.
+                        4.   Besides its role in communication, social media has also become a platform
+                             for information sharing and online communities.
+                        5.   [...] highlighting key developments ________ their impact on various
+                             aspects of our lives.
+                        6.   There are _________ concerns regarding privacy and security in the realm
+                             of IT.
+                        7.   ____________, cloud computing offers a scalable and flexible
+                             infrastructure for storing and accessing data and applications.
+
+Example                 1. AI, _________________, has the potential to automate repetitive tasks,
+                           enhance decision-making processes, and even simulate human-like
+                           intelligence.
+                        2. IT has embraced groundbreaking technologies ____________ artificial
+                           intelligence (AI), the Internet of Things (IoT), and cloud computing.
+                        3. Cloud computing can be defined as the practice of using remote servers to
+                           store, manage, and process data. In other words, this provides on-demand
+                           access to resources and services.
+                        4. Artificial intelligence (AI) involves the development of intelligent machines.
+                           That is to say, they are capable of performing tasks that typically require
+                           human intelligence, such as problem-solving and decision-making.
+
+
+
+
+                                           35
+                                                                                            Inglés II
+                        Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                           Mónica - Spizzamiglio, Carla
+                                                                               Booklet Inglés II
+ Sequence / Time             1.  First of all / First(ly), let's discuss the basic principles of programming before
+                                 diving into more complex topics.
+                             2. Second(ly), once you have grasped the theoretical concepts, it's time to
+                                 apply them through practical exercises.
+                             3. Third(ly), reviewing and practicing regularly will help reinforce your
+                                 understanding and improve your skills.
+                             4. Later in the course, we will explore advanced topics that build upon the
+                                 foundation we have established.
+                             5. Afterwards / Then / Next, we will move on to discussing algorithms and
+                                 their role in solving computational problems.
+                             6. ____________, in the 1970s, personal computers (PCs) revolutionized the
+                                 IT landscape
+                             7. Finally, we will conclude the course by working on a capstone project that
+                                 applies the knowledge and skills gained throughout the semester.
+                             8. Meanwhile / In the meantime, as you work on your assignments, don't
+                                 hesitate to reach out to your classmates or instructor for assistance.
+                             9. Before starting a coding project, it is important to plan and outline the steps
+                                 involved.
+                             10. While studying computer science, it is crucial to stay updated with the
+                                 latest technological advancements.
+                             11. Until you grasp the concept of recursion, solving certain programming
+                                 problems may seem challenging.
+
+ Purpose                     1. I am studying diligently so that I can improve my English skills.
+                             2. She arrived early so as to secure a good seat for the test.
+                             3. In order to succeed in the competitive job market, it is essential to acquire
+                                relevant skills and qualifications.
+                             4. He practiced regularly in order to become a skilled developer.
+
+ Cause and effect            1.   IT plays a pivotal role, _________ the way we communicate, work, and live
+                                  is still being transformed.
+                             2.   The software had multiple bugs, and that is why it crashed frequently.
+                             3.   As a consequence of the coding error, the application failed to function
+                                  properly.
+                             4.   He implemented a new algorithm, thus improving the performance of the
+                                  system.
+                             5.   PCs revolutionized the IT landscape ___________ they brought computing
+                                  power to individuals.
+                             6.   The project was delayed because of a change in client specifications.
+                             7.   Owing to his expertise in programming languages, he developed a robust
+                                  and efficient software solution.
+                             8.   On account of his meticulous testing, the software had minimal defects
+                                  upon release.
+
+
+LANGUAGE WORK: Read the following text and choose the correct connector in each case.
+
+Understanding Algorithms: Loops, Counters, and Accumulators
+
+
+
+
+                                                36
+                                                                                               Inglés II
+                          Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                             Mónica - Spizzamiglio, Carla
+                                                                                   Booklet Inglés II
+An algorithm is a set of instructions designed to solve a problem. (1) On the one hand / On the
+other hand, algorithms must be efficient and structured properly to achieve the desired results.
+(2)However / Moreover, writing a correct algorithm requires understanding different programming
+concepts.
+
+Loops are an essential part of algorithms. They allow a program to repeat a sequence of instructions
+(3) although / because they reduce redundancy and improve efficiency. (4)Moreover / Therefore,
+they are widely used in programming. (5) For instance / That is to say, a for loop can iterate
+through a list of numbers, performing calculations automatically.
+
+Within loops, counters and accumulators play a key role. A counter keeps track of the number of
+iterations, (6) because / thus it is often used to control loop execution. (7) Meanwhile / Because,
+an accumulator stores a running total of values, such as adding all elements in a list.
+
+Understanding how to use these elements correctly is crucial. A poorly designed loop may run
+indefinitely (8) until / besides a specific condition is met. (9) In addition / Because, using the
+wrong variable for accumulation can lead to incorrect results.
+
+Mastering these concepts helps programmers develop efficient algorithms, (10) that is to say / for
+instance, it helps them optimize calculations and minimize execution time.
+
+Unit N° 6 - Negotiating
+A) Put the words in order to write complete sentences and questions an Interviewer may ask:
+
+
+   1) in five years / see / How / you / yourself / do / ?
+       ___________________________________________________________________
+   2) been / Have / in charge of / ever / you / a team / ?
+       ___________________________________________________________________
+   3) some questions / to ask / yourself. / I / would like / you/ that / Is / about / OK / ?
+       ___________________________________________________________________
+   4) morning, / meet / Good / you. / to/ nice
+       __________________________________________________________________
+   5) work experience / tell / about / previous / your / Could / me / you / ?
+       __________________________________________________________________
+   6) have / questions / any / Do / you / ?
+       __________________________________________________________________
+B) Complete the following extract from a job interview with the sentences and questions you’ve
+formed before:
+
+
+
+
+                                                    37
+                                                                                               Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                                  Booklet Inglés II
+          Interviewer: (1) _____________________________________________
+          Interviewee: Good morning, pleased to meet you, too.
+          Interviewer: (2) ______________________________________________
+          Interviewee: Sure!
+          Interviewer: (3) ______________________________________________
+          Interviewee: I’ve been working as a junior developer for 18 months in DataIQ. I’ve been part
+of a team that has been successful in its projects. We’ve designed an application for managing stock
+for a large retail chain. Previously, we had planned and designed an app for measuring specific
+actions on website traffic.
+         Interviewer: (4)___________________________________________
+         Interviewee: Not there, but I have been captain of my volleyball team once. It happened
+when I was in high school. We won 3-0 to St George’s team that day. We had never beaten a St
+George’s team before.
+         Interviewer: Ok, and (5) ________________________________________
+         Interviewee: Well, that would depend on the result of this interview, but I expect to start
+working for this company and stay here for a long time. I had another interview this week, but I
+didn’t feel comfortable at all. If I don’t feel comfortable in a place, I prefer not to stay there. By the
+end of this year, I will have achieved all the company goals. I’ve been studying the company profile
+and it’s been made very clear to me what your expectations are. On the strength of this success, I
+will earn your confidence and in five years I will have started managing my own team.
+         Interviewer: (6) ______________________________________________
+         Interviewee: Yes, I do. In fact I would like to discuss some specifics about the contact.
+
+
+SPEAKING. Work in small groups.
+   ●      Why do you think the interviewee told the interviewer about his leadership in the volleyball
+          team? Is it OK to talk about your achievements even though they are not directly related to
+          the position you are applying for? Would you do the same?
+   ●      Is it important to ask questions at the end of a job interview? What do you think the
+          interviewee will ask?
+GRAMMAR. Work in groups. Revision.
+   1.     Identify an example of a sentence or clause which contain examples of:
+              a) present perfect simple
+              b) present perfect continuous
+              c) past perfect
+              d) simple past
+              e) future perfect
+              f) passive voice (in which verb tense is it written?)
+2. Write four conditional sentences (one of each type) from the point of view of the interviewee.
+Type 0:
+__________________________________________________________________________
+Type 1:
+__________________________________________________________________________
+Type 2:
+
+
+
+
+                                                    38
+                                                                                          Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                             Booklet Inglés II
+__________________________________________________________________________
+Type 3:
+__________________________________________________________________________
+
+
+WATCH A VIDEO.
+You’re hired - Episode 05
+You will see Sarah going for a job interview. How well she did?
+
+VOCABULARY. Match the definitions (a–h) with the vocabulary (1–8).
+
+Vocabulary
+1. …… to diversify
+2. …… picky
+3. …… voluntary work
+4. …… technicalities
+5. …… to pull something off
+6. …… to move on
+7. …… carbon footprint
+8. …… temperament
+
+Definitions
+a. work that is unpaid, often for charity organisations
+b. to leave a job
+c. a prevailing or dominant quality of mind that characterises somebody
+d. to become more varied or make something more varied
+e. precise or technical details in a contract
+f. hard to please or satisfy; knowing what you want or like and not accepting anything else
+g. to do something successfully
+h. the amount of carbon dioxide produced by somebody or something
+
+After you watch
+Task 1
+Are the sentences true or false? Answer
+
+1. Sarah has some experience of doing voluntary work.
+2. Sarah’s role at the moment is assistant sales director.
+3. Sarah thinks that the new job would involve very different skills from her current job.
+4. Sarah wants a new job because she has too much responsibility in her current job.
+5. When two of her current staff had problems with each other, Sarah helped improve the situation.
+6. Sarah thinks it’s useful to diversify business strategies.
+7. Sarah won a scholarship to go to university in India.
+
+
+
+
+                                                 39
+                                                                                         Inglés II
+                            Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                               Mónica - Spizzamiglio, Carla
+                                                                                Booklet Inglés II
+8. Sarah is interested in environmental issues.
+
+Task 2
+Highlight the best answer to the interview questions.
+
+1. Can you tell us a little bit about your current position?
+        a. I worked on some things and I got a bit of experience.
+        b. It’s a very boring job, and the manager is cruel and unfair.
+        c. I’m assistant sales director for a chain of language schools. My main duties are …
+2. Why are you thinking of moving on?
+        a. My current company is too small for me.
+        b. I’ve come as far as I can in my current position. I would love to take on some more
+responsibility.
+        c. I’m looking for a job with a higher salary.
+3. Can you give us an example of when you had to deal with a particularly difficult manage?
+        a. I haven’t had one. They’re all easy to manage.
+        b. A couple of years ago I was working with a guy. He was lazy so I told him to get out.
+        c. I had two people working for me who didn’t get along. They had no shared values,
+different temperaments and argued a lot. So, I sat down with them and we talked about their
+differences and their problems. After that, things went much more smoothly.
+4. How would you deal with a rapidly changing and uncertain global market?
+        a. I’d say to stay flexible and to diversify markets and sales strategies.
+        b. Don’t change anything at all. Just continue on as normal, regardless.
+        c. I’m not sure.
+5. Any plans to learn other languages?
+        a. Not really.
+        b. I’d love to try!
+        c. Why?
+6. Do you have any questions for us?
+        a. So, have I got the job?
+        b. Yes, about your ethical policy and your carbon footprint. I was wondering whether you are
+planning to reduce your carbon footprint and whether all your products are ethically sourced.
+        c. No.
+
+SPEAKING. Work in pairs and then tell the class. What were Sarah’s good and bad points?
+
+You’re hired - Episode 09
+Before accepting the job offer, Sarah negotiates a few terms of her contract.
+
+Preparation task
+Match the definitions (a–h) with the vocabulary (1–8).
+Vocabulary
+
+
+
+
+                                                  40
+                                                                                               Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                  Booklet Inglés II
+1. …… stock options
+2. …… to compensate
+3. …… specifics
+4. …… provisionally
+5. …… fire away
+6. …… a pay scale
+7. …… a fixed salary
+8. …… a bonus
+
+Definitions
+a. an informal phrase used to invite someone to ask a question
+b. precise details
+c. a pay system where how much you earn depends on how much experience you have, your
+qualifications or other conditions
+d. a salary that never changes
+e. to pay somebody for work they have done
+f. money given to an employee in addition to normal pay, especially for reaching a performance
+target
+g. the opportunity to buy shares in a company
+h. temporarily or conditionally
+
+Task 1
+Are the sentences true or false? Answer
+
+1. In this episode, Sarah starts her new job.
+2. Sarah wants to discuss some details of the contract.
+3. Sarah wants a bonus for meeting her sales targets.
+4. It is certain that Sarah will be offered the bonus scheme.
+5. Marcia offers Sarah more holiday time.
+6. Sarah is a good negotiator.
+
+Task 2
+Put the words in the correct order to make sentences.
+
+1. if I can. / ask / a few more / wanted to / questions, / I just
+_____________________________________________________________________________.
+
+2. I sign the contract / Before / one or two / there were / I wanted to talk about. / specifics
+_____________________________________________________________________________.
+
+3. adding certain bonuses. / a higher level on the pay scale, / asking for / I thought this could be
+compensated by / Instead of
+
+
+
+
+                                                    41
+                                                                                                 Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                                    Booklet Inglés II
+_____________________________________________________________________________.
+
+4. If / I would be looking for / I make certain sales targets, / or even break them, / or stock options in
+the company. / a good cash payment
+_____________________________________________________________________________.
+
+5. there are / for a high-pressure job, / 25 days’ holiday. / I also see that / though. / It’s not very much
+_____________________________________________________________________________.
+
+6. my start date. / if / delay / I / we could / was wondering
+_____________________________________________________________________________.
+
+SPEAKING. Is it common in your area of work to negotiate the terms of a new job, as Sarah did?
+
+
+Unit N° 7 - Technical Report
+
+Technical Report
+
+A technical report is a document that clearly and in some detail, without being too lengthy, presents
+the development or result of an investigation or project, enabling a quick understanding of a
+complex situation.
+
+A good report in English follows a logical structure that facilitates reading and comprehension.
+Regardless of the type of report you are writing, these are the essential parts you should include:
+
+    1. Title, Date, Problem, and Executive Summary
+       It should be clear and reflect its content. Additionally, many reports begin with an executive
+       summary, which is a brief overview that explicitly states the problem to be solved based on
+       the options provided.
+       Example:
+       The Impact of Remote Work on Productivity
+       The executive summary summarizes the most important points of the report in one or two
+       paragraphs, including the main findings and recommendations.
+    2. Introduction
+       Establishes the purpose and context. This is where you explain the "why" behind your report,
+       what problem you are addressing, and what you hope to achieve.
+       Example:
+       The aim of this report is to analyze the effects of remote work on employee productivity
+       during the pandemic.
+    3. Development: Body of the Report
+       Presents detailed information. It is important to structure this section into different
+       subsections with clear titles that reflect the content. Use headings to divide your text into
+       thematic sections, making the report easier to follow.
+
+
+
+
+                                                     42
+                                                                                       Inglés II
+                      Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                         Mónica - Spizzamiglio, Carla
+                                                                          Booklet Inglés II
+   For example, if you are writing a report on the effects of remote work, you could divide the
+   body of the report into sections such as:
+       ○ Impact on employee productivity
+       ○ Challenges faced
+       ○ Recommendations for improvement
+4. Be sure to use connectors like "furthermore," "however," and "in addition" to ensure that
+   ideas flow coherently between paragraphs. The language used in reports should be formal,
+   clear, and direct. This is not the time to be poetic or use colloquial phrases.
+   Some key terms and expressions that will be useful when writing a report in English are:
+       ○ Expressions to introduce objectives or purposes
+               ■ The aim of this report is…
+               ■ The purpose of this report is…
+       ○ These phrases are ideal for opening your introduction and giving a clear idea of why
+           you are writing the report.
+       ○ Vocabulary to present information
+               ■ According to the data…
+               ■ The findings indicate that…
+               ■ The research suggests…
+       ○ These expressions are very useful for discussing facts or figures in a professional and
+           objective manner.
+       ○ Phrases to make recommendations
+               ■ It is recommended that…
+               ■ In order to improve…
+               ■ It is advised to…
+5. Recommendations usually appear in the final section of a report, and these phrases will allow
+   you to propose actions or solutions clearly.
+6. Conclusion
+   The conclusion should not introduce new information but rather consolidate what you have
+   already presented in the body of the report.
+   Example:
+   In conclusion, the analysis suggests that remote work has both positive and negative effects
+   on employee productivity. It is recommended that companies implement strategies to
+   improve communication and provide adequate support for remote workers.
+   To be avoided:
+       ○ Inappropriate use of verb tenses: Ensure that verb tenses are consistent throughout
+           the report. If you are talking about past events, use the past simple, but if you are
+           making recommendations or projections, the future will be your best option.
+       ○ Colloquial or informal phrases: A report is a formal document, so you should avoid
+           informal phrases like "gonna" or "wanna." Maintain a professional tone at all times.
+       ○ Lack of connectors: Connectors are essential for your report to flow. Use words like
+           "therefore," "in addition," "on the other hand" to guide the reader through your ideas.
+
+
+
+
+                                             43
+                                                                                           Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+   7. Writing reports in English may seem like a difficult task at first, but with the right structure
+      and key vocabulary, you can do it effectively and professionally.
+      Always remember to maintain formal language, use connectors to make your ideas flow, and
+      divide your report into clear sections. By following these steps, you will be ready to write
+      reports in English that are not only informative but also easy to understand and well-
+      structured.
+
+Technical Report: Wireless Network Infrastructure Upgrade
+
+Date: October 26, 2023
+
+To: Network Operations Manager
+
+From: IT Infrastructure Team
+
+Executive Summary:
+
+This report details the evaluation and recommendation for upgrading the existing wireless network
+infrastructure to address increasing bandwidth demands and improve overall network performance.
+We assessed several Wi-Fi 6E access point models, considering factors such as throughput, security
+features, and cost-effectiveness. Based on our analysis, we recommend the [Specific Model, e.g.,
+"Ubiquiti UniFi 6E Enterprise"] for deployment, which offers superior performance and future-
+proofing capabilities.
+
+1. Introduction
+
+The purpose of this report is to analyze the current limitations of our wireless network and
+recommend a suitable upgrade path to meet the growing demands of our user base. The existing
+Wi-Fi 5 infrastructure is experiencing performance bottlenecks due to increased device density and
+bandwidth-intensive applications. This upgrade aims to enhance network reliability, speed, and
+security.
+
+2. Evaluation Criteria
+
+The following criteria were used to evaluate potential Wi-Fi 6E access point models:
+
+   ●   Throughput: Maximum data transfer speeds and real-world performance.
+   ●   Security: Support for WPA3 encryption and advanced security features.
+   ●   Device Capacity: Ability to handle a high density of connected devices.
+   ●   Power over Ethernet (PoE): Compatibility with existing PoE infrastructure.
+   ●   Management and Monitoring: Ease of configuration and network management tools.
+   ●   Cost-Effectiveness: Overall value proposition, including upfront and ongoing costs.
+
+3. Comparative Analysis
+
+
+
+
+                                                 44
+                                                                                          Inglés II
+                           Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                              Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+We evaluated the following Wi-Fi 6E access point models:
+
+   ●   [Model A, e.g., "Cisco Catalyst 9136"]
+   ●   [Model B, e.g., "Aruba 655 Series"]
+   ●   [Model C, e.g., "Ubiquiti UniFi 6E Enterprise"]
+   ●   [Model D, e.g. "TP-Link Omada EAP670"]
+
+3.1. Throughput and Performance:
+
+   ●   Model C demonstrated the highest real-world throughput in our testing, particularly in
+       congested environments.
+   ●   Models A and B also provided excellent performance, but at a higher cost.
+   ●   Model D had acceptable speeds, but did not perform as well under high load.
+
+3.2. Security Features:
+
+   ●   All models support WPA3 encryption.
+   ●   Models A and B offer advanced security features, such as intrusion detection and prevention,
+       which are valuable for high-security environments.
+   ●   Model C and D also offer robust security, but with less advanced features.
+
+3.3. Device Capacity and PoE:
+
+   ●   All models support high device density and PoE+.
+   ●   Model C had the best performance under high density testing.
+
+3.4. Management and Monitoring:
+
+   ●   Models A and B offer comprehensive management platforms with advanced analytics.
+   ●   Model C offers a user-friendly, cloud-based management interface.
+   ●   Model D offers a good management interface, but less advanced features.
+
+3.5. Cost-Effectiveness:
+
+   ●   Model C provides the best balance of performance and cost.
+   ●   Models A and B are significantly more expensive.
+   ●   Model D is less expensive, but has lower performance.
+
+4. Recommendation
+
+Based on our analysis, we recommend the [Specific Model, e.g., "Ubiquiti UniFi 6E Enterprise"] for
+upgrading our wireless network infrastructure. This model offers:
+
+   ●   Excellent throughput and performance.
+   ●   Robust security features.
+   ●   High device capacity.
+
+
+
+
+                                                  45
+                                                                                          Inglés II
+                         Fernández, Ayelén - Meneghetti, Romina - Ruiz, Roberto - Estrany,
+                                                            Mónica - Spizzamiglio, Carla
+                                                                              Booklet Inglés II
+   ●   User-friendly management.
+   ●   Very good cost effectiveness.
+
+5. Implementation Plan
+
+   ●   Phase 1: Conduct a site survey to determine optimal access point placement.
+   ●   Phase 2: Procure and configure the new access points.
+   ●   Phase 3: Deploy the new infrastructure in a phased approach, minimizing disruption.
+   ●   Phase 4: Perform post-deployment testing and optimization.
+   ●   Phase 5: Decommission the old access points.
+
+6. Conclusion
+
+The upgrade to Wi-Fi 6E will significantly improve our wireless network performance, providing a
+more reliable and efficient experience for our users. Implementing the recommended model will
+ensure that our network can meet the demands of current and future technologies.
+
+Sincerely,
+
+IT Infrastructure Team
+
+Speaking Unit N°1
+
+
+ Student B
+
+ JavaScript was created by Brendan Eich at Netscape Communications in 1995. Initially named Mocha, then
+ LiveScript, it was later renamed JavaScript. The name does not imply a direct relationship with Java; the
+ naming choice was influenced by the popularity of Java at the time. JavaScript is primarily known as a
+ scripting language for web browsers, enabling interactive and dynamic web pages. While not inherently
+ visual in the same way as Visual Basic, JavaScript frameworks and libraries like React, Angular, and Vue.js
+ allow for the creation of rich, interactive user interfaces. Instead of a drag-and-drop environment,
+ developers use code to manipulate the Document Object Model (DOM) and create interface elements like
+ buttons, forms, and animations. JavaScript's flexibility extends beyond the browser, allowing for server-
+ side development with Node.js and the creation of mobile applications with frameworks like React Native.
+
+
+
+
+                                                 46
+
