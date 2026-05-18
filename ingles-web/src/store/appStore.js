@@ -99,7 +99,7 @@ class AppStore {
           this.state.loadedUnit = data;
           this.state.activeTopicIndex = 0;
           this.state.activeExerciseIndex = 0;
-          this.state.activeMode = 'theory';
+          this.state.activeMode = 'dashboard';
           this.resetAnswerState();
         } catch (e) {
           console.error(`Error dispatching SELECT_UNIT for ${payload}:`, e);
