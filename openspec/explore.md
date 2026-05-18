@@ -1,30 +1,22 @@
-# SDD Exploration: Monolith Refactoring (ingles-web)
+# SDD Explore: Exam Simulator Integration
 
-## 1. Context & Architecture Analysis
-The current codebase of `ingles-web` is a classic DOM-manipulation monolith. The components are tightly coupled through the global `state` object and direct DOM element queries.
+## 1. Context & Objective
+The goal is to integrate a fully interactive, reactive **Exam Simulator ("Simulador de Parcial")** into the `ingles-web` frontend using the UTN Inglés II model exam dataset from the document "Revision for the first test ANSWER KEY.docx".
+This will serve as a mock test for students preparing for their first partial, providing real-time validation and "El Lado Humano" (practical IT scenarios) context for each answer.
 
-### Current Files
-- `src/data.js` (751 lines): Single massive database containing lessons, GOTCHAs, multiple-choice questions, and fill-in-the-blank questions for all units.
-- `src/main.js` (555 lines): Orchestrates state management, UI rendering, event listeners, localStorage persistence, and mathematical logic (mastery scores, streak tracking).
-- `src/style.css`: A premium Vanilla CSS styling sheet. No CSS frameworks used (as requested).
-- `index.html`: Holds the scaffolding of the HTML layout.
-
-### Target Areas for Refactoring
-1. **Dynamic Data Loading (Data Splitting)**: Instead of a massive `data.js`, we can partition units into separate data modules (`src/data/unit1.js`, `src/data/unit2.js`, etc.) and lazy-load them asynchronously using Vite's dynamic imports.
-2. **State Decoupling (Observer Pattern / Store)**: Move application state into a unified, reactive store `src/store.js` that emits update events to listeners.
-3. **Componentized UI Rendering**: Split the massive DOM-manipulating methods in `main.js` into modular renderers (e.g., `src/components/Sidebar.js`, `src/components/Header.js`, `src/components/StudyPanel.js`).
-4. **Local Storage Adaptor**: Encapsulate persistence logic into a storage service (`src/services/storage.js`) to make it easily swappable (e.g., if migrating to indexDB or an API later).
-
-## 2. Refactoring Tradeoffs
-- **Traditional Monolith (Current)**:
-  - *Pros*: Extremely simple to run, zero load delays.
-  - *Cons*: Difficult to maintain, data scalability is limited, high cognitive load for future enhancements, impossible to unit test.
-- **Componentized React-like/Reactive Architecture (Proposed)**:
-  - *Pros*: Clear Separation of Concerns (SoC), units are loaded on-demand saving memory, isolated testing of business logic, high scalability.
-  - *Cons*: Slight load latency on unit change (minimized by micro-modules).
+## 2. Exploration of the Codebase & Architecture
+- **State Management (`src/store/appStore.js`)**: Holds current active unit, active topic index, active exercise index, loading states, and completed stats. We should add `activeMode: 'exam'` state to support rendering the Exam Simulator separately without breaking the standard study units.
+- **Dynamic Loader (`src/data/loader.js`)**: Loads standard unit files. We can add a custom `loadMockExam()` method or extend `loadUnit` to load `mock_exam.js` from `src/data/units/mock_exam.js`.
+- **UI Components (`src/components/`)**:
+  - `WelcomeScreen.js` needs a prominent button: "Simular Primer Parcial" or "Exam Arena" to trigger the exam mode.
+  - `StudyPanel.js` is focused on standard units. To prevent ballooning its size (currently 15KB), we will create a dedicated `ExamSimulator.js` component under `src/components/ExamSimulator.js`.
+  - `main.js` needs to route and render `ExamSimulator` when `store.state.activeMode === 'exam'`.
+- **CSS Styles (`src/style.css`)**: Needs responsive, high-fidelity styles for the simulator elements:
+  - Input dropdowns for word-filling paragraphs.
+  - Interactive rewrites for Active-to-Passive transitions.
+  - Interactive listening player mockup with audio controls.
+  - Writing checkbox list checking `to-infinitive`, `relative clause`, and `modal verb` in real-time.
 
 ## 3. Recommended Approach
-Adopt a modular **reactive store + independent view components** pattern in Vanilla JS.
-- Split static data by Unit.
-- Implement an explicit state manager with a subscription mechanism.
-- Implement rendering components as functions receiving state and emitting events to the store.
+We will isolate the Mock Exam logic in its own data file `mock_exam.js` and build a reactive `ExamSimulator.js` component. This prevents monolithic leakage and makes the codebase highly maintainable.
+- **TDD Capability**: The project is in standard mode (no active tests), so we will proceed with manual validation.

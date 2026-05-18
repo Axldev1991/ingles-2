@@ -17,9 +17,9 @@ export const unitLoader = {
   
   getUnitsMetadata() {
     return [
-      { id: 'unit1', title: 'Unit 1: Technology & Specs', icon: '📝', topicsCount: 3, description: 'Vocabulario IT, comparativos y superlativos.' },
-      { id: 'unit2', title: 'Unit 2: Gaming & AI Future', icon: '🎮', topicsCount: 3, description: 'Géneros de videojuegos y tiempos perfectos.' },
-      { id: 'unit3', title: 'Unit 3: History of UTN FRA', icon: '🏛️', topicsCount: 4, description: 'Orígenes de la UTN FRA, voz pasiva y pasado perfecto.' }
+      { id: 'unit1', title: 'Unit 1: Technology & Specs', icon: '💻', topicsCount: 7, description: 'Vocabulario clave de IT, lectura sobre lenguajes de programación, e infinitivos con o sin \'to\'.' },
+      { id: 'unit2', title: 'Unit 2: Game Development & AI Support', icon: '🎮', topicsCount: 8, description: 'Vocabulario de videojuegos y atención al cliente, tiempos perfectos y voz pasiva.' },
+      { id: 'unit3', title: 'Unit 3: History of UTN FRA', icon: '🏛️', topicsCount: 7, description: 'Orígenes y evolución de la UTN FRA, junto a herramientas gramaticales avanzadas de reporte (Voz Pasiva y Past Perfect).' }
     ];
   }
 };

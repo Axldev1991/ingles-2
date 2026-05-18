@@ -1,85 +1,48 @@
-# SDD Proposal: Decoupled State & Componentized Architecture
+# SDD Proposal: Exam Simulator Implementation
 
-## 1. Objective
-Refactor the `ingles-web` codebase into an elegant, highly maintainable, and modern frontend application using pure Vanilla JS. The goal is to completely separate State Management, Data Loading, Business Logic, and UI rendering.
-
-## 2. Proposed Architecture Diagram
+## 1. Architectural Changes
+We will implement the Exam Simulator using a clean, modular structure that matches the current architecture of `ingles-web`:
 
 ```mermaid
 graph TD
-    subgraph UI Components
-        Sidebar[Sidebar Component]
-        Header[Header / Stats Component]
-        StudyPanel[Study Panel Component]
-        PracticeCard[Practice Card Component]
-    end
-
-    subgraph Core Engine
-        Store[Reactive Store]
-        StorageSvc[Storage Service]
-    end
-
-    subgraph Data Layer
-        Loader[Data Loader]
-        U1[unit1.js]
-        U2[unit2.js]
-        U3[unit3.js]
-    end
-
-    Store -->|Publishes State Updates| Sidebar
-    Store -->|Publishes State Updates| Header
-    Store -->|Publishes State Updates| StudyPanel
-    Store -->|Publishes State Updates| PracticeCard
-
-    Sidebar -->|Dispatches Actions| Store
-    PracticeCard -->|Dispatches Actions| Store
-    StudyPanel -->|Dispatches Actions| Store
-
-    Store -->|Reads/Writes| StorageSvc
-    Store -->|Requests Unit| Loader
-    Loader -->|Lazy Imports| U1
-    Loader -->|Lazy Imports| U2
-    Loader -->|Lazy Imports| U3
-    U1 -.-> Loader
-    U2 -.-> Loader
-    U3 -.-> Loader
-    Loader -->|Delivers Unit Data| Store
+    WelcomeScreen[WelcomeScreen.js] -->|dispatch 'START_EXAM'| AppStore[appStore.js]
+    AppStore -->|trigger renderApp| Main[main.js]
+    Main -->|render if activeMode === 'exam'| ExamSimulator[ExamSimulator.js]
+    ExamSimulator -->|read dataset| MockExamData[mock_exam.js]
+    ExamSimulator -->|validate and dispatch| AppStore
 ```
 
-## 3. Structural Breakdown & Directory Layout
-We will establish a professional, modular project folder layout:
+### A. Data Schema (`src/data/units/mock_exam.js`)
+We will export `mockExamData` containing the exact parsed fields from the DOCX file, including comprehensive metadata, questions, listening transcript, correct answers, and "El Lado Humano" (Root Cause / Team Interaction explanations) context.
 
-```
-ingles-web/
-├── index.html
-├── package.json
-└── src/
-    ├── main.js                 # App Bootstrapper & orchestrator
-    ├── style.css               # Main design tokens & custom components
-    ├── data/
-    │   ├── loader.js           # Handles dynamic imports of units
-    │   └── units/
-    │       ├── unit1.js        # Unit 1 static data (theory + exercises)
-    │       ├── unit2.js        # Unit 2 static data
-    │       └── unit3.js        # Unit 3 static data
-    ├── services/
-    │   └── storage.js          # LocalStorage persistence wrapper
-    ├── store/
-    │   └── appStore.js         # Unified reactive state store (Pub-Sub)
-    └── components/
-        ├── Header.js           # Handles streak & average mastery display
-        ├── Sidebar.js          # Renders unit selector list and progress bars
-        ├── StudyPanel.js       # Toggles between Theory and Practice layouts
-        └── WelcomeScreen.js    # Renders first-time welcome card
-```
+### B. UI Component (`src/components/ExamSimulator.js`)
+We will create `renderExamSimulator(containerElement, store)` which handles:
+- **Navigation Panel**: Step-by-step progress indicator (Steps 1 to 6).
+- **Responsive Layout**: Minimal vertical height, ensuring all content fits comfortably without endless scrolls.
+- **Dynamic Inputs**: `<select>` dropdowns inside paragraph text for paragraph filling, and auto-verifying `<input type="text">` fields for passive re-writing.
+- **Listening Player Emulator**: A simulated audio playback interface with play/pause icons, current time tracking, and interactive transcript completion.
+- **Writing AI-Checker (Vanilla JS)**: Reactive `<textarea>` that performs real-time checks using regex:
+  - Infinitive of purpose: `\b(to \w+)\b`
+  - Relative clause: `\b(which|who|that)\b`
+  - Modal verb: `\b(can|could|must|should|might|may|have to)\b`
 
-## 4. Key Implementation Patterns
+### C. State Extensions (`src/store/appStore.js`)
+- `examStepIndex`: Track the active step in the exam (1 to 6).
+- `examAnswers`: Track the user's answers for each section.
+- `examSubmitted`: Boolean indicating if the test was finished.
+- `examStats`: Object tracking correct count, incorrect count, and writing pass indicators.
+- **Actions**:
+  - `START_EXAM`: Sets `activeMode = 'exam'`, resets exam states.
+  - `SET_EXAM_ANSWER`: Stores current input values per step.
+  - `SUBMIT_EXAM_STEP`: Validates current step inputs, calculates score, and increments `examStepIndex`.
+  - `COMPLETE_EXAM`: Summarizes results and saves mastery scores to localStorage.
 
-### Pub-Sub Reactive Store (`src/store/appStore.js`)
-Rather than views mutating a global object directly and calling global rendering functions, components will dispatch **actions** to a reactive Store, which updates the state and broadcasts it to registered listeners.
+### D. Routing Hooks (`src/main.js` and `src/components/WelcomeScreen.js`)
+- Add "Simulador de Parcial" button to `WelcomeScreen.js`.
+- Render `ExamSimulator` in `main.js` if `state.activeMode === 'exam'`.
+- Modify `Header.js` to show the current test step and an "Abandonar" button.
 
-### Lazy Loading of Units (`src/data/loader.js`)
-Instead of bundling all units into a single chunk, Vite will load unit data files on-demand using dynamic `import()` statements, ensuring quick initial load times.
-
-## 5. Timeline & Safety
-No user-facing behavior or visual styling will change. This is a pure structural refactoring. We will perform the changes iteratively, ensuring the application remains fully functional at every step.
+## 2. Design Aesthetics
+- Curated dark/light-mode friendly color scheme (e.g., sleek HSL gradients, glassmorphism cards).
+- Visual checkmarks for writing components showing a glowing green ring when correct patterns are met.
+- Smooth CSS transitions when switching between steps.

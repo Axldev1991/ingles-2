@@ -163,7 +163,7 @@ export function renderStudyPanel(containerElement, store) {
     `;
   });
 
-  // General layout in Focus Mode (Theory or Practice)
+  // General layout in Focus Mode: Split-Screen Theory & Practice
   containerElement.innerHTML = `
     <header class="focus-mode-header">
       <button class="back-to-dashboard-btn" id="focus-back-btn">
@@ -182,19 +182,27 @@ export function renderStudyPanel(containerElement, store) {
       <h2>Tema ${activeTopicIndex + 1}: ${activeTopic.title}</h2>
     </div>
 
-    <div class="study-panel single-column" id="study-panel-content">
-      <div class="mode-selector-container">
-        <div class="mode-selector">
-          <button class="mode-btn ${activeMode === 'theory' ? 'active' : ''}" id="mode-theory-btn">
-            📖 Estudiar Teoría
-          </button>
-          <button class="mode-btn ${activeMode === 'practice' ? 'active' : ''}" id="mode-practice-btn">
-            ⚡ Práctica Arena
-          </button>
+    <div class="study-panel" id="study-panel-content">
+      <!-- Left column: Study Theory -->
+      <section class="theory-card" aria-labelledby="theory-title">
+        <div class="theory-card-header">
+          <h3 id="theory-title">${activeTopic.title}</h3>
+          <span class="badge theory-badge">Módulo de Lectura</span>
         </div>
-      </div>
-      
-      <div class="mode-content-view" id="mode-content-view"></div>
+        <div class="theory-content">
+          ${activeTopic.explanation}
+        </div>
+        ${activeTopic.gotcha ? `
+          <div class="gotcha-alert" role="alert">
+            <strong>⚠️ TRAMPA DE EXAMEN (GOTCHA):</strong> ${activeTopic.gotcha}
+          </div>
+        ` : ''}
+      </section>
+
+      <!-- Right column: Practice Arena -->
+      <section class="practice-card" id="practice-card" aria-labelledby="practice-title">
+        <!-- Exercise content loads here -->
+      </section>
     </div>
   `;
 
@@ -211,210 +219,171 @@ export function renderStudyPanel(containerElement, store) {
     });
   });
 
-  // 2. Render Mode Content View
-  const modeContentView = containerElement.querySelector('#mode-content-view');
+  const practiceCard = containerElement.querySelector('#practice-card');
+  const totalExercises = activeTopic.exercises.length;
 
-  if (activeMode === 'theory') {
-    // Mode: Theory Card
-    modeContentView.innerHTML = `
-      <section class="theory-card full-width-card" aria-labelledby="theory-title">
-        <div class="theory-card-header">
-          <h3 id="theory-title">${activeTopic.title}</h3>
-          <span class="badge theory-badge">Módulo de Lectura</span>
-        </div>
-        <div class="theory-content">
-          ${activeTopic.explanation}
-        </div>
-        ${activeTopic.gotcha ? `
-          <div class="gotcha-alert" role="alert">
-            <strong>⚠️ TRAMPA DE EXAMEN (GOTCHA):</strong> ${activeTopic.gotcha}
-          </div>
-        ` : ''}
+  if (activeExerciseIndex >= totalExercises) {
+    // Case: Topic Complete View
+    const hasMoreTopics = (activeTopicIndex + 1) < loadedUnit.topics.length;
+    practiceCard.innerHTML = `
+      <div class="mastery-complete-card" style="text-align: center; padding: 32px 16px;">
+        <span style="font-size: 3.5rem;" role="img" aria-label="Party Popper">🎉</span>
+        <h3>¡Tema Completado!</h3>
+        <p style="margin-bottom: 24px;">Revisaste toda la teoría y los ejercicios prácticos de <strong>${activeTopic.title}</strong>.</p>
         
-        <div class="theory-footer-actions">
-          <button class="start-btn start-practice-cta" id="start-practice-cta-btn">
-            💪 ¡Entendido! Ir a los ejercicios
-          </button>
-        </div>
-      </section>
+        <button class="start-btn" id="finish-topic-btn">
+          ${hasMoreTopics ? 'Ir al Siguiente Tema' : 'Finalizar Unidad'}
+        </button>
+      </div>
     `;
 
-    modeContentView.querySelector('#start-practice-cta-btn').addEventListener('click', () => {
-      store.dispatch('SET_MODE', 'practice');
+    practiceCard.querySelector('#finish-topic-btn').addEventListener('click', () => {
+      store.dispatch('FINISH_TOPIC');
     });
 
   } else {
-    // Mode: Practice Card View
-    modeContentView.innerHTML = `
-      <section class="practice-card full-width-card" id="practice-card" aria-labelledby="practice-title">
-        <!-- Exercise content loads here -->
-      </section>
-    `;
-
-    const practiceCard = modeContentView.querySelector('#practice-card');
-    const totalExercises = activeTopic.exercises.length;
-
-    if (activeExerciseIndex >= totalExercises) {
-      // Case: Topic Complete View
-      const hasMoreTopics = (activeTopicIndex + 1) < loadedUnit.topics.length;
-      practiceCard.innerHTML = `
-        <div class="mastery-complete-card" style="text-align: center; padding: 32px 16px;">
-          <span style="font-size: 3.5rem;" role="img" aria-label="Party Popper">🎉</span>
-          <h3>¡Tema Completado!</h3>
-          <p style="margin-bottom: 24px;">Revisaste toda la teoría y los ejercicios prácticos de <strong>${activeTopic.title}</strong>.</p>
-          
-          <button class="start-btn" id="finish-topic-btn">
-            ${hasMoreTopics ? 'Ir al Siguiente Tema' : 'Finalizar Unidad'}
-          </button>
-        </div>
-      `;
-
-      practiceCard.querySelector('#finish-topic-btn').addEventListener('click', () => {
-        store.dispatch('FINISH_TOPIC');
-      });
-
-    } else {
-      // Case: Active Exercise View
-      const exercise = activeTopic.exercises[activeExerciseIndex];
-      practiceCard.innerHTML = `
-        <div class="practice-header">
-          <h3 id="practice-title">Arena de Práctica</h3>
-          <span class="exercise-stepper">Ejercicio ${activeExerciseIndex + 1} de ${totalExercises}</span>
+    // Case: Active Exercise View
+    const exercise = activeTopic.exercises[activeExerciseIndex];
+    practiceCard.innerHTML = `
+      <div class="practice-header">
+        <h3 id="practice-title">Arena de Práctica</h3>
+        <span class="exercise-stepper">Ejercicio ${activeExerciseIndex + 1} de ${totalExercises}</span>
+      </div>
+      
+      <div class="exercise-body">
+        <div class="question-box">
+          <p>${exercise.question}</p>
         </div>
         
-        <div class="exercise-body">
-          <div class="question-box">
-            <p>${exercise.question}</p>
-          </div>
-          
-          <div id="interaction-area"></div>
-          <div id="feedback-area"></div>
-        </div>
+        <div id="interaction-area"></div>
+        <div id="feedback-area"></div>
+      </div>
+      
+      <div class="exercise-actions" style="display: flex; gap: 12px; justify-content: space-between;">
+        <button class="prev-btn" id="prev-exercise-btn" ${activeExerciseIndex === 0 ? 'disabled' : ''}>
+          ⬅ Anterior
+        </button>
         
-        <div class="exercise-actions">
-          <button class="submit-btn" id="submit-answer-btn" disabled>
+        <div style="display: flex; gap: 12px; flex-grow: 1; justify-content: flex-end;">
+          <button class="submit-btn" id="submit-answer-btn" disabled style="width: auto; min-width: 160px;">
             Verificar Respuesta
           </button>
-          <button class="next-btn" id="next-exercise-btn" style="display: none;">
+          <button class="next-btn" id="next-exercise-btn" style="display: none; width: auto; min-width: 160px;">
             ${activeExerciseIndex + 1 === totalExercises ? 'Completar Tema' : 'Siguiente Ejercicio'}
           </button>
         </div>
-      `;
+      </div>
+    `;
 
-      const interactionArea = practiceCard.querySelector('#interaction-area');
-      const submitBtn = practiceCard.querySelector('#submit-answer-btn');
-      const nextBtn = practiceCard.querySelector('#next-exercise-btn');
-      const feedbackArea = practiceCard.querySelector('#feedback-area');
+    const interactionArea = practiceCard.querySelector('#interaction-area');
+    const submitBtn = practiceCard.querySelector('#submit-answer-btn');
+    const prevBtn = practiceCard.querySelector('#prev-exercise-btn');
+    const nextBtn = practiceCard.querySelector('#next-exercise-btn');
+    const feedbackArea = practiceCard.querySelector('#feedback-area');
 
-      // Enable/Disable submit button depending on initial answer state
-      if (!hasSubmitted) {
-        if (exercise.type === 'multiple-choice' && selectedOption !== null) {
-          submitBtn.disabled = false;
-        } else if (exercise.type === 'fill-in-the-blank' && userAnswerText.trim() !== '') {
-          submitBtn.disabled = false;
-        }
+    // Enable/Disable submit button depending on initial answer state
+    if (!hasSubmitted) {
+      if (exercise.type === 'multiple-choice' && selectedOption !== null) {
+        submitBtn.disabled = false;
+      } else if (exercise.type === 'fill-in-the-blank' && userAnswerText.trim() !== '') {
+        submitBtn.disabled = false;
       }
+    }
 
-      // Render interactions (multiple choice options or text input)
-      if (exercise.type === 'multiple-choice') {
-        const list = document.createElement('div');
-        list.className = 'options-list';
-        
-        exercise.options.forEach((option, idx) => {
-          const btn = document.createElement('button');
-          btn.className = `option-btn ${selectedOption === idx ? 'selected' : ''}`;
-          btn.textContent = option;
-          btn.id = `opt-${idx}`;
-          
-          if (hasSubmitted) {
-            // Apply correct/incorrect style classes
-            if (idx === exercise.correctAnswer) {
-              btn.classList.add('correct');
-            } else if (idx === selectedOption) {
-              btn.classList.add('incorrect');
-            }
-          } else {
-            btn.addEventListener('click', () => {
-              store.dispatch('SELECT_OPTION', idx);
-            });
-          }
-          list.appendChild(btn);
-        });
-        interactionArea.appendChild(list);
-
-      } else if (exercise.type === 'fill-in-the-blank') {
-        interactionArea.innerHTML = `
-          <div class="input-box">
-            <input 
-              type="text" 
-              id="blank-input" 
-              class="text-answer-input" 
-              placeholder="Escribí tu respuesta acá..." 
-              autocomplete="off" 
-              value="${userAnswerText}"
-            />
-          </div>
-        `;
-        const input = interactionArea.querySelector('#blank-input');
+    // Render interactions (multiple choice options or text input)
+    if (exercise.type === 'multiple-choice') {
+      const list = document.createElement('div');
+      list.className = 'options-list';
+      
+      exercise.options.forEach((option, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `option-btn ${selectedOption === idx ? 'selected' : ''}`;
+        btn.textContent = option;
+        btn.id = `opt-${idx}`;
         
         if (hasSubmitted) {
-          input.disabled = true;
-          if (isCorrect) {
-            input.classList.add('correct');
-          } else {
-            input.classList.add('incorrect');
-            input.value = `${userAnswerText} (Correcto: ${exercise.correctAnswer})`;
+          // Apply correct/incorrect style classes
+          if (idx === exercise.correctAnswer) {
+            btn.classList.add('correct');
+          } else if (idx === selectedOption) {
+            btn.classList.add('incorrect');
           }
         } else {
-          input.focus();
-          input.addEventListener('input', (e) => {
-            store.dispatch('SET_ANSWER_TEXT', e.target.value);
-            // Enable/disable submit button directly — no re-render needed
-            submitBtn.disabled = e.target.value.trim() === '';
-          });
-          
-          input.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' && e.target.value.trim() !== '') {
-              store.dispatch('SUBMIT_ANSWER');
-            }
+          btn.addEventListener('click', () => {
+            store.dispatch('SELECT_OPTION', idx);
           });
         }
-      }
+        list.appendChild(btn);
+      });
+      interactionArea.appendChild(list);
 
-      // Render feedback if submitted
+    } else if (exercise.type === 'fill-in-the-blank') {
+      interactionArea.innerHTML = `
+        <div class="input-box">
+          <input 
+            type="text" 
+            id="blank-input" 
+            class="text-answer-input" 
+            placeholder="Escribí tu respuesta acá..." 
+            autocomplete="off" 
+            value="${userAnswerText}"
+          />
+        </div>
+      `;
+      const input = interactionArea.querySelector('#blank-input');
+      
       if (hasSubmitted) {
-        submitBtn.style.display = 'none';
-        nextBtn.style.display = 'block';
-        nextBtn.focus();
-
-        feedbackArea.innerHTML = `
-          <div class="feedback-box ${isCorrect ? 'correct' : 'incorrect'}">
-            <div class="feedback-title">
-              <span>${isCorrect ? '✅ ¡Respuesta Correcta!' : '❌ Respuesta Incorrecta'}</span>
-            </div>
-            <p class="feedback-explanation">${exercise.explanation}</p>
-          </div>
-        `;
+        input.disabled = true;
+        if (isCorrect) {
+          input.classList.add('correct');
+        } else {
+          input.classList.add('incorrect');
+          input.value = `${userAnswerText} (Correcto: ${exercise.correctAnswer})`;
+        }
       } else {
-        submitBtn.addEventListener('click', () => {
-          store.dispatch('SUBMIT_ANSWER');
+        input.focus();
+        input.addEventListener('input', (e) => {
+          store.dispatch('SET_ANSWER_TEXT', e.target.value);
+          // Enable/disable submit button directly — no re-render needed
+          submitBtn.disabled = e.target.value.trim() === '';
+        });
+        
+        input.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && e.target.value.trim() !== '') {
+            store.dispatch('SUBMIT_ANSWER');
+          }
         });
       }
+    }
 
-      nextBtn.addEventListener('click', () => {
-        store.dispatch('NEXT_EXERCISE');
+    // Render feedback if submitted
+    if (hasSubmitted) {
+      submitBtn.style.display = 'none';
+      nextBtn.style.display = 'block';
+      nextBtn.focus();
+
+      feedbackArea.innerHTML = `
+        <div class="feedback-box ${isCorrect ? 'correct' : 'incorrect'}">
+          <div class="feedback-title">
+            <span>${isCorrect ? '✅ ¡Respuesta Correcta!' : '❌ Respuesta Incorrecta'}</span>
+          </div>
+          <p class="feedback-explanation">${exercise.explanation}</p>
+        </div>
+      `;
+    } else {
+      submitBtn.addEventListener('click', () => {
+        store.dispatch('SUBMIT_ANSWER');
       });
     }
+
+    prevBtn.addEventListener('click', () => {
+      store.dispatch('PREV_EXERCISE');
+    });
+
+    nextBtn.addEventListener('click', () => {
+      store.dispatch('NEXT_EXERCISE');
+    });
   }
-
-  // Hook top-level mode togglers in tabs layout
-  containerElement.querySelector('#mode-theory-btn').addEventListener('click', () => {
-    store.dispatch('SET_MODE', 'theory');
-  });
-
-  containerElement.querySelector('#mode-practice-btn').addEventListener('click', () => {
-    store.dispatch('SET_MODE', 'practice');
-  });
 }
 
 export default renderStudyPanel;

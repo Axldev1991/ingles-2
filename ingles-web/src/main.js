@@ -4,6 +4,7 @@ import { renderHeader } from './components/Header.js';
 import { renderSidebar } from './components/Sidebar.js';
 import { renderStudyPanel } from './components/StudyPanel.js';
 import { renderWelcomeScreen } from './components/WelcomeScreen.js';
+import { renderExamSimulator } from './components/ExamSimulator.js';
 
 function renderApp(state) {
   // 1. Render Header stats
@@ -18,7 +19,9 @@ function renderApp(state) {
   // 3. Render Main View based on active state
   const appView = document.getElementById('app-view');
   if (appView) {
-    if (state.activeUnitId === null) {
+    if (state.activeMode === 'exam') {
+      renderExamSimulator(appView, appStore);
+    } else if (state.activeUnitId === null) {
       renderWelcomeScreen(appView, appStore);
     } else {
       renderStudyPanel(appView, appStore);
