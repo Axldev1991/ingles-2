@@ -5,7 +5,7 @@
   padding: 24px;
   width: 100%;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 32px;
   min-height: calc(100vh - 48px);
 }
@@ -210,13 +210,23 @@ header {
    ========================================== */
 @media (max-width: 1024px) {
   .app-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 20px;
     padding: 16px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .sidebar {
     gap: 12px;
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-content {
+    min-width: 0;
+    width: 100%;
   }
 
   .sidebar-title {
@@ -230,6 +240,7 @@ header {
     gap: 8px;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    width: 100%;
   }
 
   .unit-selector-list::-webkit-scrollbar {
