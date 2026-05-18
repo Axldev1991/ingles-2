@@ -90,6 +90,152 @@ export const unit2Data = {
       ]
     },
     {
+      id: "u2_reading_comprehension",
+      title: "Reading: Call Centres & Conversational AI",
+      explanation: `
+        <h3>Texto de comprensión: Call Centres</h3>
+        <p>Este tema evalúa tu comprensión del texto del booklet sobre call centres y la integración de IA conversacional:</p>
+        <ul>
+          <li>Los <strong>call centres</strong> son departamentos que manejan llamadas de clientes (ventas, soporte técnico, reclamos).</li>
+          <li>Un operador puede tener que <strong>pacify</strong> (calmar) a un cliente enojado que está <strong>yelling</strong> (gritando).</li>
+          <li>La IA conversacional se está integrando para automatizar respuestas de <strong>level-1 support</strong>.</li>
+          <li>Los bots deben ser <strong>empathetic</strong> (empáticos) para mejorar la experiencia del usuario.</li>
+          <li>Los videojuegos se clasifican en géneros: <strong>FPS</strong>, <strong>MMORPG</strong>, <strong>RTS</strong>.</li>
+        </ul>
+      `,
+      gotcha: "El booklet conecta dos mundos: la industria del gaming y los call centres automatizados. No los estudies por separado — ambos convergen en la aplicación de IA a interacciones humanas.",
+      exercises: [
+        {
+          id: "u2_read_1",
+          type: "multiple-choice",
+          question: "READING — What is the primary function of a call centre?",
+          options: [
+            "To develop video games for entertainment.",
+            "To handle incoming and outgoing customer calls for sales, support and complaints.",
+            "To train AI models for language processing."
+          ],
+          correctAnswer: 1,
+          explanation: "Un call centre es un departamento que gestiona las llamadas entrantes y salientes de clientes para ventas, soporte técnico y reclamos."
+        },
+        {
+          id: "u2_read_2",
+          type: "fill-in-the-blank",
+          question: "READING — When a customer is extremely angry and shouting in a support call, the operator must _________ them.",
+          correctAnswer: "pacify",
+          explanation: "Según el texto del booklet, 'pacify' es el verbo usado para describir la acción de calmar a un cliente enojado."
+        },
+        {
+          id: "u2_read_3",
+          type: "multiple-choice",
+          question: "READING — Why is it important for conversational AI bots to be 'empathetic'?",
+          options: [
+            "Because they need to sell more products.",
+            "Because understanding user feelings helps ease frustration and improve the service experience.",
+            "Because regulations require emotional responses."
+          ],
+          correctAnswer: 1,
+          explanation: "Los bots empáticos mejoran la experiencia del usuario al mostrar comprensión de sus sentimientos y frustración."
+        },
+        {
+          id: "u2_read_4",
+          type: "multiple-choice",
+          question: "READING — Which game genre involves tactical resource management, base building, and commanding armies?",
+          options: ["FPS", "MMORPG", "RTS"],
+          correctAnswer: 2,
+          explanation: "RTS (Real-Time Strategy) se basa en la gestión táctica de recursos, construcción de bases y comando de ejércitos en tiempo real."
+        },
+        {
+          id: "u2_read_5",
+          type: "multiple-choice",
+          question: "READING — In which genre does the player see through the character's eyes and focus on aiming?",
+          options: ["RTS", "FPS", "MMORPG"],
+          correctAnswer: 1,
+          explanation: "FPS (First-Person Shooter): el jugador ve desde la perspectiva en primera persona del personaje y se enfoca en apuntar y disparar."
+        }
+      ]
+    },
+    {
+      id: "u2_language_work",
+      title: "Language Work: Perfect Tenses Practice",
+      explanation: `
+        <h3>Práctica de Tiempos Perfectos del Booklet</h3>
+        <p>Este tema recoge los ejercicios de Language Work del booklet para practicar la elección correcta entre:</p>
+        <ul>
+          <li><strong>Present Perfect Continuous</strong> (<code>have/has been + -ing</code>): acción en progreso continuo desde el pasado hasta ahora.</li>
+          <li><strong>Future Perfect</strong> (<code>will have + p.p.</code>): acción completada antes de un punto futuro.</li>
+          <li><strong>Present Perfect Simple</strong> (<code>have/has + p.p.</code>): acción completada con resultado presente.</li>
+        </ul>
+      `,
+      gotcha: "El Present Perfect Continuous enfatiza la DURACIÓN del proceso; el Present Perfect Simple enfatiza el RESULTADO. <em>'I have been writing code for 3 hours'</em> (duración) vs <em>'I have written 200 lines'</em> (resultado).",
+      exercises: [
+        {
+          id: "u2_lw_1",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — 'Scientists __________ (experiment) with virtual assistants for years now.' Use the correct tense.",
+          correctAnswer: "have been experimenting",
+          explanation: "La acción empezó en el pasado y continúa ahora ('for years now'). Usamos Present Perfect Continuous: <code>have been experimenting</code>."
+        },
+        {
+          id: "u2_lw_2",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — 'By 2030, engineers __________ (develop) fully autonomous customer service AI.' Use the correct tense.",
+          correctAnswer: "will have developed",
+          explanation: "'By 2030' marca un límite futuro. Usamos Future Perfect: <code>will have developed</code>."
+        },
+        {
+          id: "u2_lw_3",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK — 'The IT department __________ (work) on the migration since March.'",
+          options: ["has been working", "will have worked", "worked"],
+          correctAnswer: 0,
+          explanation: "'Since March' indica un punto de inicio en el pasado con la acción continuando. Present Perfect Continuous: <code>has been working</code>."
+        },
+        {
+          id: "u2_lw_4",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK — 'By the time you read this, I __________ (already/finish) the report.'",
+          options: ["have already finished", "will have already finished", "am finishing"],
+          correctAnswer: 1,
+          explanation: "'By the time...' establece un hito futuro. Future Perfect: <code>will have already finished</code>."
+        },
+        {
+          id: "u2_lw_5",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK — 'She __________ (learn) Python for six months and can already build APIs.'",
+          options: ["has been learning", "will have learned", "learned"],
+          correctAnswer: 0,
+          explanation: "'For six months' con resultado presente visible. Present Perfect Continuous: <code>has been learning</code>."
+        },
+        {
+          id: "u2_lw_6",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — 'By next semester, the university __________ (introduce) three new IT courses.'",
+          correctAnswer: "will have introduced",
+          explanation: "'By next semester' = hito futuro. Future Perfect: <code>will have introduced</code>."
+        },
+        {
+          id: "u2_lw_7",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK — 'The server __________ (crash) three times this week. We need to investigate.'",
+          options: ["has been crashing", "has crashed", "will have crashed"],
+          correctAnswer: 1,
+          explanation: "Aquí enfatizamos el RESULTADO (tres caídas concretas), no la duración. Present Perfect Simple: <code>has crashed</code>."
+        },
+        {
+          id: "u2_lw_8",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK — Choose the difference: 'I have read 3 books this month' vs 'I have been reading a lot lately.'",
+          options: [
+            "Both are Present Perfect Simple.",
+            "The first emphasizes the result (quantity), the second emphasizes the duration/process.",
+            "The first is past, the second is present."
+          ],
+          correctAnswer: 1,
+          explanation: "Present Perfect Simple ('have read 3 books') enfatiza el resultado cuantificable. Present Perfect Continuous ('have been reading') enfatiza el proceso continuo. Esta distinción es CLAVE para el examen."
+        }
+      ]
+    },
+    {
       id: "u2_revision_capstone",
       title: "🏁 Unit 2: Revision Arena",
       explanation: `

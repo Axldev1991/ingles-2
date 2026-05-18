@@ -56,6 +56,151 @@ export const unit1Data = {
           question: "A compiler translates high-level source code into _________ code before execution.",
           correctAnswer: "machine",
           explanation: "El compilador genera código de máquina (<code>machine</code>) u <code>object</code> code para que el CPU pueda procesarlo de manera nativa y ultra veloz sin necesidad de traducción posterior.<br><br><strong>Ejemplo:</strong> El código en C++ <code>int a = 5;</code> se compila a instrucciones directas en binario (ceros y unos) específicas del procesador destino."
+        },
+        {
+          id: "u1_vocab_1",
+          type: "multiple-choice",
+          question: "VOCABULARY — Match: 'A diagram representing the successive logical steps in a program.' Which term matches this definition?",
+          options: ["source code", "flowchart", "debugging"],
+          correctAnswer: 1,
+          explanation: "Un <code>flowchart</code> (diagrama de flujo) es una representación gráfica de los pasos lógicos sucesivos de un programa. Es la primera herramienta visual que un programador usa antes de escribir código."
+        },
+        {
+          id: "u1_vocab_2",
+          type: "multiple-choice",
+          question: "VOCABULARY — Match: 'Program instructions written in a particular computer language.' Which term matches?",
+          options: ["machine code", "source code", "compiler"],
+          correctAnswer: 1,
+          explanation: "<code>Source code</code> (código fuente) son las instrucciones escritas por el programador en un lenguaje particular (Python, C++, etc.) antes de ser traducidas a código máquina."
+        },
+        {
+          id: "u1_vocab_3",
+          type: "multiple-choice",
+          question: "VOCABULARY — Match: 'The techniques of detecting and correcting errors (or bugs) which may occur in programs.'",
+          options: ["compiling", "flowcharting", "debugging"],
+          correctAnswer: 2,
+          explanation: "<code>Debugging</code> (depuración) es el proceso de detectar y corregir errores o bugs en los programas informáticos."
+        },
+        {
+          id: "u1_vocab_4",
+          type: "multiple-choice",
+          question: "VOCABULARY — Match: 'The basic instructions understood by computers; it consists of 1s and 0s (binary code).'",
+          options: ["machine code", "source code", "flowchart"],
+          correctAnswer: 0,
+          explanation: "<code>Machine code</code> (código máquina) consiste en instrucciones binarias (1s y 0s) que el procesador entiende directamente sin necesidad de traducción."
+        }
+      ]
+    },
+    {
+      id: "u1_reading_comprehension",
+      title: "Reading: Computer Languages",
+      explanation: `
+        <h3>Texto de comprensión: Computer Languages</h3>
+        <p>Este tema evalúa tu comprensión del texto <em>"Computer Languages"</em> del booklet. Repasá los conceptos clave:</p>
+        <ul>
+          <li>Las computadoras solo entienden <strong>machine code</strong> (código binario de 1s y 0s).</li>
+          <li><strong>Assembly languages</strong> usan abreviaturas (ADD, SUB, MPY) y son traducidas por un <strong>assembler</strong>.</li>
+          <li>Los <strong>high-level languages</strong> (FORTRAN, COBOL, BASIC, PASCAL, C, C++, Java) son más cercanos al inglés.</li>
+          <li>Un <strong>compiler</strong> traduce todo el código fuente a objeto de una sola vez; un <strong>interpreter</strong> traduce línea por línea.</li>
+          <li><strong>Markup languages</strong> (HTML, XML, VoiceXML) no son lenguajes de programación, sino de formato y enlace de documentos.</li>
+        </ul>
+      `,
+      gotcha: "No confundas <strong>programming languages</strong> (que ejecutan lógica: C++, Java, Python) con <strong>markup languages</strong> (que formatean documentos: HTML, XML). ¡El booklet hace esta distinción explícitamente!",
+      exercises: [
+        {
+          id: "u1_read_1",
+          type: "multiple-choice",
+          question: "READING — Do computers understand human languages? Why / Why not?",
+          options: [
+            "Yes, modern computers understand spoken English natively.",
+            "No, they can only understand machine code (binary: 1s and 0s).",
+            "Yes, but only if using a high-level language."
+          ],
+          correctAnswer: 1,
+          explanation: "Según el texto: <em>'Unfortunately for us, computers can't understand spoken English or any other natural language. The only language they can understand directly is machine code.'</em>"
+        },
+        {
+          id: "u1_read_2",
+          type: "multiple-choice",
+          question: "READING — What is the function of an assembler?",
+          options: [
+            "It translates high-level languages into machine code.",
+            "It translates assembly language programs into machine code.",
+            "It interprets source code line by line at runtime."
+          ],
+          correctAnswer: 1,
+          explanation: "Según el texto: <em>'The program is then translated into machine code by a piece of software called an assembler.'</em> El assembler trabaja específicamente con lenguajes assembly (de bajo nivel)."
+        },
+        {
+          id: "u1_read_3",
+          type: "multiple-choice",
+          question: "READING — Why did software developers design high-level languages?",
+          options: [
+            "To make programs easier to write and overcome intercommunication problems between different computers.",
+            "To replace machine code entirely and eliminate the need for compilers.",
+            "To make programs run faster than assembly language."
+          ],
+          correctAnswer: 0,
+          explanation: "Según el texto: <em>'To make the programs easier to write, and to overcome the problem of intercommunication between different types of computer, software developers designed high-level languages.'</em>"
+        },
+        {
+          id: "u1_read_4",
+          type: "fill-in-the-blank",
+          question: "READING — Which language is used to teach the fundamentals of programming in universities? (one word)",
+          correctAnswer: "PASCAL",
+          explanation: "Según el texto: <em>'PASCAL was created in 1971. It is used in universities to teach the fundamentals of programming.'</em>"
+        },
+        {
+          id: "u1_read_5",
+          type: "multiple-choice",
+          question: "READING — What is the difference between a compiler and an interpreter?",
+          options: [
+            "A compiler translates line by line; an interpreter translates all at once.",
+            "A compiler converts the entire program into machine code in one go; an interpreter translates line by line as the program is running.",
+            "Both do exactly the same thing but at different speeds."
+          ],
+          correctAnswer: 1,
+          explanation: "Según el texto: <em>'A compiler translates the source code into object code - that is, it converts the entire program into machine code in one go. On the other hand, an interpreter translates the source code line by line as the program is running.'</em>"
+        },
+        {
+          id: "u1_read_6",
+          type: "multiple-choice",
+          question: "READING — Why are HTML and VoiceXML called markup languages?",
+          options: [
+            "Because they execute logical instructions like programming languages.",
+            "Because they use markup tags to format and link text files, not to execute logic.",
+            "Because they were created after programming languages."
+          ],
+          correctAnswer: 1,
+          explanation: "Según el texto: <em>'Markup languages use instructions, known as markup tags, to format and link text files.'</em> No ejecutan lógica de programación."
+        },
+        {
+          id: "u1_read_c1",
+          type: "fill-in-the-blank",
+          question: "READING — Complete: '__________ allows us to create our own tags to describe our data better.'",
+          correctAnswer: "XML",
+          explanation: "Según el texto: <em>'XML, which stands for EXtensible Markup Language... XML enables us to define our own tags.'</em>"
+        },
+        {
+          id: "u1_read_c2",
+          type: "fill-in-the-blank",
+          question: "READING — Complete: 'IBM developed __________ in the 1950s. It was the first high-level language in data processing.'",
+          correctAnswer: "FORTRAN",
+          explanation: "Según el texto: <em>'FORTRAN was developed by IBM in 1954 and is still used for scientific and engineering applications.'</em>"
+        },
+        {
+          id: "u1_read_c3",
+          type: "fill-in-the-blank",
+          question: "READING — Complete: '__________ applets are small programs that run automatically on web pages and let you watch animated characters, play games, etc.'",
+          correctAnswer: "Java",
+          explanation: "Según el texto: <em>'Java was designed by Sun in 1995 to run on the Web. Java applets provide animation and interactive features on web pages.'</em>"
+        },
+        {
+          id: "u1_read_c4",
+          type: "fill-in-the-blank",
+          question: "READING — Complete: 'This language is widely used in the business community. For example, ADD VAT to NET-PRICE could be used in a __________ program.'",
+          correctAnswer: "COBOL",
+          explanation: "Según el texto: <em>'COBOL (Common Business Oriented Language) was developed in 1959 and is mainly used for business applications.'</em> La sintaxis legible tipo inglés comercial es su sello distintivo."
         }
       ]
     },
@@ -117,6 +262,76 @@ export const unit1Data = {
           ],
           correctAnswer: 1,
           explanation: "La oración correcta es la segunda. En inglés, para expresar propósito u objetivo se utiliza <code>to + infinitive</code> (<code>to structure</code>) o bien <code>for + -ing</code> (<code>for structuring</code>).<br><br><strong>Ejemplo:</strong> <em>\"We use node <strong>to run</strong> javascript on the server\"</em> o <em>\"We use node <strong>for running</strong> javascript...\"</em>.<br><br><div class='incorrect-breakdown'><strong>¿Por qué no las otras opciones?</strong><ul><li><code>for to structure</code>: Es una mezcla incorrecta. Combinar 'for' y 'to' seguidos delante de un verbo es una de las fallas más penalizadas en los exámenes de la UTN.</li><li><code>for structure</code>: Falta el gerundio. Detrás de la preposición 'for', obligatoriamente debe haber un verbo en formato <code>-ing</code> o un sustantivo directo. 'Structure' como verbo requiere '-ing' en este caso.</li></ul></div>"
+        },
+        {
+          id: "u1_inf_lw1",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — Make a sentence: 'expensive / set up a data-processing area' → It's expensive _________ set up a data-processing area.",
+          correctAnswer: "to",
+          explanation: "Después de adjetivos como 'expensive', usamos el infinitivo con 'to': <em>'It's expensive <strong>to</strong> set up a data-processing area.'</em>"
+        },
+        {
+          id: "u1_inf_lw2",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — Make a sentence: 'advisable / test the programs under different conditions' → It's advisable _________ test the programs under different conditions.",
+          correctAnswer: "to",
+          explanation: "Después de adjetivos como 'advisable', usamos el infinitivo con 'to': <em>'It's advisable <strong>to</strong> test the programs under different conditions.'</em>"
+        },
+        {
+          id: "u1_inf_lw3",
+          type: "fill-in-the-blank",
+          question: "LANGUAGE WORK — Make a sentence: 'unusual / write a program that works correctly the first time' → It's unusual _________ write a program that works correctly the first time it's tested.",
+          correctAnswer: "to",
+          explanation: "Después del adjetivo 'unusual', se usa infinitivo con 'to': <em>'It's unusual <strong>to</strong> write a program that works correctly the first time.'</em>"
+        },
+        {
+          id: "u1_wb_1",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — '__________________ is the process of writing a program using a computer language.'",
+          correctAnswer: "Programming",
+          explanation: "De la familia de palabras program/programmers/programming/programmable, <code>Programming</code> (sustantivo/gerundio) describe el proceso de escribir un programa."
+        },
+        {
+          id: "u1_wb_2",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'A computer __________________ is a set of instructions that tells the computer how to do a specific task.'",
+          correctAnswer: "program",
+          explanation: "Un <code>program</code> (sustantivo) es un conjunto de instrucciones que le dice a la computadora cómo realizar una tarea específica."
+        },
+        {
+          id: "u1_wb_3",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'Most computer __________________ make a plan of the program before they write it.'",
+          correctAnswer: "programmers",
+          explanation: "<code>Programmers</code> (sustantivo plural) son las personas que crean los programas. Planifican antes de escribir código."
+        },
+        {
+          id: "u1_wb_4",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'Programs written in a high-level language require __________________ — that is, translation into machine code.'",
+          correctAnswer: "compilation",
+          explanation: "De la familia compile/compiler/compilation, <code>compilation</code> (sustantivo) es el proceso de traducir código fuente a código máquina."
+        },
+        {
+          id: "u1_wb_5",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'A source program is converted into machine code by software called a __________________.'",
+          correctAnswer: "compiler",
+          explanation: "Un <code>compiler</code> (sustantivo) es el software que convierte el código fuente a código máquina."
+        },
+        {
+          id: "u1_wb_6",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'Any error or malfunction of a computer program is known as a __________________.'",
+          correctAnswer: "bug",
+          explanation: "Un <code>bug</code> (sustantivo) es cualquier error o mal funcionamiento en un programa de computadora."
+        },
+        {
+          id: "u1_wb_7",
+          type: "fill-in-the-blank",
+          question: "WORD BUILDING — 'The process of going through the code to identify the cause of errors and fixing them is called __________________.'",
+          correctAnswer: "debugging",
+          explanation: "<code>Debugging</code> (sustantivo/gerundio) es el proceso de recorrer el código para identificar y corregir errores."
         }
       ]
     },
@@ -183,6 +398,131 @@ export const unit1Data = {
           options: ["Gerund (Noun)", "Present Participle (Continuous Verb)", "Adjective"],
           correctAnswer: 1,
           explanation: "Aquí <code>processing</code> está precedido por el verbo auxiliar <code>is</code> (forma de 'to be') para expresar una acción en progreso continuo en el presente. Por ende, funciona como un **Present Participle (Participio Presente)**.<br><br><strong>Ejemplo:</strong> <em>\"The databases <strong>are replicating</strong> now.\"</em> (Las bases de datos se están replicando ahora).<br><br><div class='incorrect-breakdown'><strong>¿Por qué no las otras opciones?</strong><ul><li><code>Gerund</code>: Los gerundios representan sustantivos o conceptos abstractos, no verbos conjugados que describen una actividad activa en curso.</li><li><code>Adjective</code>: No está calificando a un sustantivo adyacente (el sustantivo más cercano es 'query' pero está separado por el objeto directo 'the requested').</li></ul></div>"
+        },
+        {
+          id: "u1_ing_lw1",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK -ing — 'PCs generate graphics by performing mathematical calculations on data.' The -ing form 'performing' is:",
+          options: ["Gerund (g)", "Present Participle (pp)", "Adjective (a)"],
+          correctAnswer: 0,
+          explanation: "'Performing' viene después de la preposición 'by', por lo tanto funciona como un <strong>gerundio</strong> (sustantivo verbal). Después de preposiciones, siempre usamos -ing como gerundio."
+        },
+        {
+          id: "u1_ing_lw2",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK -ing — 'Businesspeople use graphics to make information more interesting visually.' The -ing form 'interesting' is:",
+          options: ["Gerund (g)", "Present Participle (pp)", "Adjective (a)"],
+          correctAnswer: 2,
+          explanation: "'Interesting' describe y califica al sustantivo 'information', por ende funciona como un <strong>adjetivo</strong>."
+        },
+        {
+          id: "u1_ing_lw3",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK -ing — 'She is designing a logo for the company.' The -ing form 'designing' is:",
+          options: ["Gerund (g)", "Present Participle (pp)", "Adjective (a)"],
+          correctAnswer: 1,
+          explanation: "'Designing' está precedido por 'is' (verbo to be) formando el Present Continuous: 'is designing'. Funciona como <strong>present participle</strong>."
+        },
+        {
+          id: "u1_ing_lw4",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK -ing — 'If you need to make a presentation, I suggest using PowerPoint.' The -ing form 'using' is:",
+          options: ["Gerund (g)", "Present Participle (pp)", "Adjective (a)"],
+          correctAnswer: 0,
+          explanation: "El verbo 'suggest' siempre va seguido de gerundio (-ing). 'Using' actúa como el objeto (sustantivo) del verbo suggest, por ende es un <strong>gerundio</strong>."
+        },
+        {
+          id: "u1_ing_lw5",
+          type: "multiple-choice",
+          question: "LANGUAGE WORK -ing — 'The Internet is a network linking other networks.' The -ing form 'linking' is:",
+          options: ["Gerund (g)", "Present Participle (pp)", "Adjective (a)"],
+          correctAnswer: 1,
+          explanation: "'Linking' funciona como una <strong>reduced relative clause</strong> (= 'a network <em>which links</em> other networks'). Es un <strong>present participle</strong> que describe una acción activa del sustantivo."
+        },
+        {
+          id: "u1_ing_fix1",
+          type: "fill-in-the-blank",
+          question: "FIX THE MISTAKE — 'Computer animation is the process of create objects which move across the screen.' The correct form is: the process of _________ objects.",
+          correctAnswer: "creating",
+          explanation: "Después de la preposición 'of' se requiere obligatoriamente gerundio (-ing): <code>the process of creating</code>."
+        },
+        {
+          id: "u1_ing_fix2",
+          type: "fill-in-the-blank",
+          question: "FIX THE MISTAKE — 'You can open the colour palette by click on the corresponding icon.' The correct form is: by _________ on the icon.",
+          correctAnswer: "clicking",
+          explanation: "Después de la preposición 'by' se requiere gerundio (-ing): <code>by clicking</code>."
+        },
+        {
+          id: "u1_ing_fix3",
+          type: "fill-in-the-blank",
+          question: "FIX THE MISTAKE — 'CAD programs are very fast at to perform drawing functions.' The correct form is: fast at _________ drawing functions.",
+          correctAnswer: "performing",
+          explanation: "Después de la preposición 'at' se requiere gerundio (-ing), NO 'to + infinitive': <code>fast at performing</code>."
+        },
+        {
+          id: "u1_ing_choice1",
+          type: "multiple-choice",
+          question: "CHOOSE — 'We use high-level languages because machine code is too difficult ________, understand and debug.'",
+          options: ["read", "reading", "to read"],
+          correctAnswer: 2,
+          explanation: "Después del adjetivo 'difficult' usamos infinitivo con 'to': <code>too difficult to read</code>."
+        },
+        {
+          id: "u1_ing_choice2",
+          type: "multiple-choice",
+          question: "CHOOSE — 'I went on the course ____________ how to be a better programmer.'",
+          options: ["learn", "to learn", "for to learn"],
+          correctAnswer: 1,
+          explanation: "Para expresar propósito usamos infinitivo con 'to': <code>to learn</code>. La opción 'for to learn' es SIEMPRE incorrecta en inglés."
+        },
+        {
+          id: "u1_ing_choice3",
+          type: "multiple-choice",
+          question: "CHOOSE — 'I'm not interested in ____________ that computer language.'",
+          options: ["learn", "learning", "to learn"],
+          correctAnswer: 1,
+          explanation: "Después de la preposición 'in' se requiere gerundio: <code>interested in learning</code>."
+        },
+        {
+          id: "u1_ing_choice4",
+          type: "multiple-choice",
+          question: "CHOOSE — 'He refuses ____________ the project with me.'",
+          options: ["do", "doing", "to do"],
+          correctAnswer: 2,
+          explanation: "El verbo 'refuse' siempre va seguido de infinitivo con 'to': <code>refuses to do</code>."
+        },
+        {
+          id: "u1_ing_choice5",
+          type: "multiple-choice",
+          question: "CHOOSE — 'The engineers warned the employees not ___________ the cables.'",
+          options: ["touch", "touching", "to touch"],
+          correctAnswer: 2,
+          explanation: "El verbo 'warn' + objeto + infinitivo: <code>warned them not to touch</code>."
+        },
+        {
+          id: "u1_ing_choice6",
+          type: "multiple-choice",
+          question: "CHOOSE — 'They may not _____________ to the conference.'",
+          options: ["come", "coming", "to come"],
+          correctAnswer: 0,
+          explanation: "Después de verbos modales (may, can, must, should, will) usamos bare infinitive (sin 'to'): <code>may not come</code>."
+        },
+        {
+          id: "u1_ing_choice7",
+          type: "multiple-choice",
+          question: "CHOOSE — '______________ in the IT industry is usually well paid.'",
+          options: ["Work", "Working", "To work"],
+          correctAnswer: 1,
+          explanation: "Cuando un verbo funciona como sujeto de la oración, usamos gerundio (-ing): <code>Working in the IT industry...</code>"
+        },
+        {
+          id: "u1_ing_choice8",
+          type: "multiple-choice",
+          question: "CHOOSE — 'Spyware can make your PC _____________ more slowly.'",
+          options: ["perform", "performing", "to perform"],
+          correctAnswer: 0,
+          explanation: "El verbo causativo 'make' + objeto + bare infinitive (sin 'to'): <code>make your PC perform</code>."
         }
       ]
     },
@@ -229,6 +569,141 @@ export const unit1Data = {
           options: ["don't have to", "mustn't", "should"],
           correctAnswer: 1,
           explanation: "Subir credenciales de producción a repositorios públicos representa una brecha crítica de seguridad y, por ende, está **estrictamente prohibido**. El verbo modal correcto para expresar prohibición absoluta es <code>mustn't</code>.<br><br><strong>Ejemplo:</strong> <em>\"You <strong>mustn't</strong> share production passwords under any circumstances.\"</em> (No debes compartir contraseñas de producción bajo ninguna circunstancia).<br><br><div class='incorrect-breakdown'><strong>¿Por qué no las otras opciones?</strong><ul><li><code>don't have to</code>: Indicaría opcionalidad (<em>\"no tienes por qué hacerlo si no quieres\"</em>), lo cual sería sumamente peligroso para una regla crítica de seguridad informática.</li><li><code>should</code>: Indicaría una recomendación positiva (<em>\"deberías subirlos\"</em>), lo cual es exactamente lo contrario a lo que dicta la seguridad informática básica.</li></ul></div>"
+        },
+        {
+          id: "u1_mod_lw1",
+          type: "fill-in-the-blank",
+          question: "MODAL VERBS — 'We __________ have a picnic tomorrow, but it depends on the weather.' (possibility)",
+          correctAnswer: "might",
+          explanation: "Para expresar posibilidad usamos <code>might</code>: algo que quizás pase, pero depende de las circunstancias."
+        },
+        {
+          id: "u1_mod_lw2",
+          type: "fill-in-the-blank",
+          question: "MODAL VERBS — 'You ___________ wear a suit to the interview.' (Advice)",
+          correctAnswer: "should",
+          explanation: "Para dar un consejo o recomendación usamos <code>should</code>: deberías usar traje para la entrevista."
+        },
+        {
+          id: "u1_mod_lw3",
+          type: "multiple-choice",
+          question: "MODAL VERBS — 'Mary, you ______________ come to your aunt's birthday next Saturday night.' (Lack of necessity)",
+          options: ["must", "don't have to", "mustn't"],
+          correctAnswer: 1,
+          explanation: "Falta de necesidad = <code>don't have to</code>. No es obligatorio que Mary vaya, puede elegir."
+        },
+        {
+          id: "u1_mod_lw4",
+          type: "fill-in-the-blank",
+          question: "MODAL VERBS — 'You __________ smoke here!' (Prohibition)",
+          correctAnswer: "mustn't",
+          explanation: "Para expresar prohibición estricta usamos <code>mustn't</code>: está terminantemente prohibido fumar aquí."
+        },
+        {
+          id: "u1_mod_lw5",
+          type: "fill-in-the-blank",
+          question: "MODAL VERBS — '__________ I go to the toilet, please?' (request/ask for permission)",
+          correctAnswer: "Can",
+          explanation: "Para pedir permiso de manera informal usamos <code>Can</code>: ¿Puedo ir al baño?"
+        },
+        {
+          id: "u1_mod_lw6",
+          type: "fill-in-the-blank",
+          question: "MODAL VERBS — 'Lisa __________ tidy her room before she goes out!' (personal obligation)",
+          correctAnswer: "must",
+          explanation: "Para expresar obligación personal fuerte usamos <code>must</code>: Lisa debe ordenar su habitación."
+        },
+        {
+          id: "u1_mod_lw7",
+          type: "multiple-choice",
+          question: "MODAL VERBS — 'In Britain you __________ drive on the left.' (external obligation)",
+          options: ["must", "have to", "should"],
+          correctAnswer: 1,
+          explanation: "Para expresar una obligación impuesta externamente (ley, regla) usamos <code>have to</code>. En Gran Bretaña, la ley te obliga a conducir por la izquierda."
+        }
+      ]
+    },
+    {
+      id: "u1_relative_clauses",
+      title: "Relative Clauses (who, which, where)",
+      explanation: `
+        <h3>Cláusulas Relativas</h3>
+        <p>Las cláusulas relativas agregan información sobre un sustantivo usando pronombres relativos:</p>
+        <ul>
+          <li><strong>who</strong> (o that): para personas. <em>'Natasha is the person <strong>who</strong> sets the passwords.'</em></li>
+          <li><strong>which</strong> (o that): para cosas. <em>'The hardware <strong>which</strong> we have in our offices is delicate.'</em></li>
+          <li><strong>where</strong>: para lugares. <em>'The dining room <strong>where</strong> all our staff eat.'</em></li>
+        </ul>
+        <h4>Defining vs Non-defining</h4>
+        <ul>
+          <li><strong>Defining</strong>: información esencial, SIN comas. Se puede usar 'that'.</li>
+          <li><strong>Non-defining</strong>: información extra, CON comas. NO se puede usar 'that'.</li>
+        </ul>
+      `,
+      gotcha: "En cláusulas <strong>non-defining</strong> (con comas), NUNCA uses 'that'. Usá 'who' para personas y 'which' para cosas. <em>'Python, <strong>which</strong> is versatile, is popular.'</em> (NO: 'Python, that is versatile...')",
+      exercises: [
+        {
+          id: "u1_rel_1",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'Do you know the man ________ lives next door?'",
+          correctAnswer: "who",
+          explanation: "Se refiere a una persona ('the man'), por lo tanto usamos <code>who</code>."
+        },
+        {
+          id: "u1_rel_2",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'That's the gallery __________ had the Leonardo Da Vinci exhibition.'",
+          correctAnswer: "which",
+          explanation: "Se refiere a un lugar como cosa ('the gallery'), por lo tanto usamos <code>which</code> (o 'that')."
+        },
+        {
+          id: "u1_rel_3",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'Are those the people _______ are selling their house?'",
+          correctAnswer: "who",
+          explanation: "Se refiere a personas ('the people'), por lo tanto usamos <code>who</code>."
+        },
+        {
+          id: "u1_rel_4",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'Is that the bus __________ goes to the airport?'",
+          correctAnswer: "which",
+          explanation: "Se refiere a una cosa ('the bus'), por lo tanto usamos <code>which</code> (o 'that')."
+        },
+        {
+          id: "u1_rel_5",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'We walked past the school ___________ their children go.'",
+          correctAnswer: "where",
+          explanation: "Se refiere a un lugar ('the school') y la cláusula ya tiene sujeto ('their children'), por lo tanto usamos <code>where</code>."
+        },
+        {
+          id: "u1_rel_6",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'She's the woman _______ everyone is talking about.'",
+          correctAnswer: "who",
+          explanation: "Se refiere a una persona ('the woman'), usamos <code>who</code>."
+        },
+        {
+          id: "u1_rel_7",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'I took my laptop back to the shop ___________ I bought it.'",
+          correctAnswer: "where",
+          explanation: "Se refiere a un lugar ('the shop') y la cláusula ya tiene sujeto ('I'), usamos <code>where</code>."
+        },
+        {
+          id: "u1_rel_8",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'Antwerp is the city _________ I lived as a child.'",
+          correctAnswer: "where",
+          explanation: "Se refiere a un lugar ('the city') con sujeto existente ('I'), usamos <code>where</code>."
+        },
+        {
+          id: "u1_rel_9",
+          type: "fill-in-the-blank",
+          question: "RELATIVE CLAUSES — 'Is there someone _________ can speak Arabic in your class?'",
+          correctAnswer: "who",
+          explanation: "Se refiere a una persona ('someone'), usamos <code>who</code>."
         }
       ]
     },

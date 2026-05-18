@@ -99,6 +99,151 @@ export const unit3Data = {
       ]
     },
     {
+      id: "u3_reading_comprehension",
+      title: "Reading: History of UTN",
+      explanation: `
+        <h3>Texto de comprensión: History of UTN</h3>
+        <p>Este tema evalúa tu comprensión del texto histórico del booklet sobre la creación y evolución de la UTN:</p>
+        <ul>
+          <li><strong>1948</strong>: Creación de la UON (Universidad Obrera Nacional) por Ley 13.229 bajo Perón.</li>
+          <li><strong>1955</strong>: Inicio de clases en la FRA (Facultad Regional Avellaneda) con el Ing. Braidwood como primer decano.</li>
+          <li><strong>1955 (sept)</strong>: Golpe de estado ("Revolución Libertadora") intenta disolver la UON.</li>
+          <li><strong>FAGUT</strong>: Federación Argentina de Graduados de la Universidad Tecnológica — luchó por la autonomía.</li>
+          <li><strong>1959</strong>: Ley 14.855 renombra la UON como UTN y le otorga autonomía.</li>
+          <li><strong>Villa Domínico</strong>: Campus actual de la FRA (Av. Ramón Franco).</li>
+        </ul>
+      `,
+      gotcha: "Las fechas clave para el examen son: <strong>1948</strong> (UON), <strong>1955</strong> (FRA + golpe), <strong>1959</strong> (UTN autónoma). ¡No las confundas!",
+      exercises: [
+        {
+          id: "u3_read_1",
+          type: "multiple-choice",
+          question: "READING — What was the original name of UTN when it was created in 1948?",
+          options: [
+            "Universidad Tecnológica Nacional",
+            "Universidad Obrera Nacional (UON)",
+            "Facultad Regional Avellaneda"
+          ],
+          correctAnswer: 1,
+          explanation: "La UTN fue creada originalmente como UON (Universidad Obrera Nacional) en 1948 para capacitar profesionalmente a la clase trabajadora."
+        },
+        {
+          id: "u3_read_2",
+          type: "multiple-choice",
+          question: "READING — Why did the military government after the 1955 coup try to close the UON?",
+          options: [
+            "Because there were financial problems.",
+            "Because they associated it with Peronist political propaganda.",
+            "Because there were not enough students enrolled."
+          ],
+          correctAnswer: 1,
+          explanation: "El gobierno de facto consideró a la UON un instrumento de propaganda política peronista y buscó disolverla o reducirla a una escuela de oficios."
+        },
+        {
+          id: "u3_read_3",
+          type: "fill-in-the-blank",
+          question: "READING — The organization formed by graduates that fought for the university's autonomy was called __________.",
+          correctAnswer: "FAGUT",
+          explanation: "La FAGUT (Federación Argentina de Graduados de la Universidad Tecnológica) nucleó a los graduados que lucharon por mantener el estatus universitario."
+        },
+        {
+          id: "u3_read_4",
+          type: "multiple-choice",
+          question: "READING — What did Law 14.855 of 1959 achieve?",
+          options: [
+            "It created the UON for the first time.",
+            "It granted the university academic autonomy and renamed it as UTN.",
+            "It moved the campus to Villa Domínico."
+          ],
+          correctAnswer: 1,
+          explanation: "La Ley 14.855 de 1959 otorgó la autonomía académica y renombró oficialmente a la UON como Universidad Tecnológica Nacional (UTN)."
+        },
+        {
+          id: "u3_read_5",
+          type: "fill-in-the-blank",
+          question: "READING — The FRA originally held classes at the Industrial School located on Av. Mitre in the city of __________.",
+          correctAnswer: "Avellaneda",
+          explanation: "La FRA comenzó sus clases en la Escuela Industrial de Avellaneda, ubicada sobre la Av. Mitre."
+        }
+      ]
+    },
+    {
+      id: "u3_passive_voice_lw",
+      title: "Language Work: Active vs Passive Classification",
+      explanation: `
+        <h3>Clasificación Activa / Pasiva</h3>
+        <p>El booklet incluye ejercicios donde debés identificar si una oración está en voz activa o pasiva, y luego reescribirla en la forma contraria:</p>
+        <ul>
+          <li><strong>Activa</strong>: El sujeto realiza la acción. <em>'Engineers designed the bridge.'</em></li>
+          <li><strong>Pasiva</strong>: El sujeto recibe la acción. <em>'The bridge was designed by engineers.'</em></li>
+        </ul>
+        <p>Para identificarla, buscá la estructura <code>to be + past participle</code> en la oración. Si la tiene, es pasiva.</p>
+      `,
+      gotcha: "Para saber si es pasiva, buscá <code>am/is/are/was/were + past participle</code>. Si el sujeto HACE la acción → activa. Si el sujeto RECIBE la acción → pasiva.",
+      exercises: [
+        {
+          id: "u3_class_1",
+          type: "multiple-choice",
+          question: "CLASSIFY — 'The law was signed by President Perón in 1948.' Is this sentence Active or Passive?",
+          options: ["Active", "Passive"],
+          correctAnswer: 1,
+          explanation: "La estructura 'was signed' (was + past participle) indica voz pasiva. El sujeto 'The law' recibe la acción."
+        },
+        {
+          id: "u3_class_2",
+          type: "multiple-choice",
+          question: "CLASSIFY — 'Students fought for the university's autonomy.' Is this sentence Active or Passive?",
+          options: ["Active", "Passive"],
+          correctAnswer: 0,
+          explanation: "El sujeto 'Students' realiza la acción directamente ('fought'). No hay estructura 'to be + p.p.', por lo tanto es voz activa."
+        },
+        {
+          id: "u3_class_3",
+          type: "multiple-choice",
+          question: "CLASSIFY — 'The new campus will be inaugurated next year.' Is this sentence Active or Passive?",
+          options: ["Active", "Passive"],
+          correctAnswer: 1,
+          explanation: "La estructura 'will be inaugurated' (will be + past participle) indica voz pasiva en futuro simple."
+        },
+        {
+          id: "u3_class_4",
+          type: "multiple-choice",
+          question: "CLASSIFY — 'The FAGUT organized protests against the military intervention.' Is this sentence Active or Passive?",
+          options: ["Active", "Passive"],
+          correctAnswer: 0,
+          explanation: "El sujeto 'The FAGUT' realiza la acción ('organized'). Es voz activa."
+        },
+        {
+          id: "u3_rewrite_1",
+          type: "fill-in-the-blank",
+          question: "REWRITE — Active: 'The military government dissolved the university board.' → Passive: The university board _____________ by the military government.",
+          correctAnswer: "was dissolved",
+          explanation: "'dissolved' está en pasado simple activo y 'board' es singular. Pasiva: <code>was dissolved</code>."
+        },
+        {
+          id: "u3_rewrite_2",
+          type: "fill-in-the-blank",
+          question: "REWRITE — Active: 'The congress approves new education laws every year.' → Passive: New education laws _____________ by the congress every year.",
+          correctAnswer: "are approved",
+          explanation: "'approves' está en presente simple activo y 'laws' es plural. Pasiva: <code>are approved</code>."
+        },
+        {
+          id: "u3_rewrite_3",
+          type: "fill-in-the-blank",
+          question: "REWRITE — Active: 'The university will build a new research center.' → Passive: A new research center _____________ by the university.",
+          correctAnswer: "will be built",
+          explanation: "'will build' está en futuro simple activo. Pasiva: <code>will be built</code>."
+        },
+        {
+          id: "u3_rewrite_4",
+          type: "fill-in-the-blank",
+          question: "REWRITE — Active: 'Teachers use interactive whiteboards in every classroom.' → Passive: Interactive whiteboards _____________ by teachers in every classroom.",
+          correctAnswer: "are used",
+          explanation: "'use' está en presente simple activo y 'whiteboards' es plural. Pasiva: <code>are used</code>."
+        }
+      ]
+    },
+    {
       id: "u3_past_perfect",
       title: "Past Perfect Simple",
       explanation: `
@@ -141,6 +286,71 @@ export const unit3Data = {
           ],
           correctAnswer: 0,
           explanation: "La acción de que las clases corrieran bien es el pasado más antiguo (had run), antes de que el golpe de estado interrumpiera (interrupted - past simple)."
+        }
+      ]
+    },
+    {
+      id: "u3_past_perfect_lw",
+      title: "Language Work: Past Perfect Practice",
+      explanation: `
+        <h3>Práctica de Past Perfect del Booklet</h3>
+        <p>El booklet incluye ejercicios de secuenciación temporal usando Past Perfect + Past Simple:</p>
+        <ul>
+          <li>La acción que ocurrió PRIMERO → <strong>Past Perfect</strong> (<code>had + p.p.</code>)</li>
+          <li>La acción que ocurrió DESPUÉS → <strong>Past Simple</strong></li>
+        </ul>
+        <p>Conectores típicos: <em>before, after, by the time, when, already, just</em>.</p>
+      `,
+      gotcha: "Si una oración empieza con 'Before...' o 'By the time...', la acción ANTERIOR va en Past Perfect y la posterior en Past Simple. <em>'Before the class started, the teacher <strong>had prepared</strong> the materials.'</em>",
+      exercises: [
+        {
+          id: "u3_pp_lw1",
+          type: "fill-in-the-blank",
+          question: "PAST PERFECT — 'By the time the FRA opened in 1955, the government __________ (already/create) the UON in 1948.'",
+          correctAnswer: "had already created",
+          explanation: "La creación de la UON (1948) ocurrió ANTES de la apertura de la FRA (1955). Past Perfect: <code>had already created</code>."
+        },
+        {
+          id: "u3_pp_lw2",
+          type: "fill-in-the-blank",
+          question: "PAST PERFECT — 'When the military coup happened, classes __________ (already/begin) at the FRA.'",
+          correctAnswer: "had already begun",
+          explanation: "Las clases ya habían comenzado (acción anterior) cuando el golpe ocurrió (acción posterior). Past Perfect: <code>had already begun</code>."
+        },
+        {
+          id: "u3_pp_lw3",
+          type: "multiple-choice",
+          question: "PAST PERFECT — 'After the students __________ (collect) enough signatures, the congress debated the new law.'",
+          options: ["collected", "had collected", "have collected"],
+          correctAnswer: 1,
+          explanation: "Recolectar firmas ocurrió ANTES de que el congreso debatiera. Después de 'After', la primera acción va en Past Perfect: <code>had collected</code>."
+        },
+        {
+          id: "u3_pp_lw4",
+          type: "multiple-choice",
+          question: "PAST PERFECT — Choose the correct sentence:",
+          options: [
+            "The engineer finished the project before the deadline had arrived.",
+            "The engineer had finished the project before the deadline arrived.",
+            "The engineer had finished the project before the deadline had arrived."
+          ],
+          correctAnswer: 1,
+          explanation: "Terminar el proyecto (acción anterior) → Past Perfect: 'had finished'. La llegada del deadline (acción posterior) → Past Simple: 'arrived'. Solo la acción más antigua lleva Past Perfect."
+        },
+        {
+          id: "u3_pp_lw5",
+          type: "fill-in-the-blank",
+          question: "PAST PERFECT — 'The programmer __________ (never/work) with Java before she joined the gaming company.'",
+          correctAnswer: "had never worked",
+          explanation: "No haber trabajado con Java (experiencia anterior) antes de unirse a la empresa (Past Simple 'joined'). Past Perfect: <code>had never worked</code>."
+        },
+        {
+          id: "u3_pp_lw6",
+          type: "multiple-choice",
+          question: "PAST PERFECT — 'When I arrived at the meeting, the presentation __________ (already/start).'",
+          options: ["already started", "had already started", "has already started"],
+          correctAnswer: 1,
+          explanation: "Mi llegada (Past Simple: 'arrived') fue posterior al inicio de la presentación. Past Perfect: <code>had already started</code>."
         }
       ]
     },
