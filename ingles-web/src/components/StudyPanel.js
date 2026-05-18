@@ -369,6 +369,8 @@ export function renderStudyPanel(containerElement, store) {
           input.focus();
           input.addEventListener('input', (e) => {
             store.dispatch('SET_ANSWER_TEXT', e.target.value);
+            // Enable/disable submit button directly — no re-render needed
+            submitBtn.disabled = e.target.value.trim() === '';
           });
           
           input.addEventListener('keydown', (e) => {

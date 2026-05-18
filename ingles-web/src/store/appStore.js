@@ -131,7 +131,9 @@ class AppStore {
       case 'SET_ANSWER_TEXT':
         if (this.state.hasSubmitted) break;
         this.state.userAnswerText = payload;
-        this.notify();
+        // NO notify() here — updating the DOM on every keystroke destroys the
+        // <input> element and loses cursor position, causing reversed text.
+        // The submit button enablement is handled directly in the DOM listener.
         break;
 
       case 'SUBMIT_ANSWER':
