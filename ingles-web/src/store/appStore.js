@@ -11,7 +11,9 @@ class AppStore {
       masteryScores: {
         unit1: 0,
         unit2: 0,
-        unit3: 0
+        unit3: 0,
+        unit4: 0,
+        unit5: 0
       },
       completedExercises: []
     };
